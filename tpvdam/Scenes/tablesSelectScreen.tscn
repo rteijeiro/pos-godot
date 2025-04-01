@@ -1,0 +1,167 @@
+[gd_scene load_steps=4 format=3 uid="uid://d18orot2qk1pd"]
+
+[ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_ifq2u"]
+[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_v34ye"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqygr"]
+bg_color = Color(0.950516, 0.413653, 0.165663, 1)
+
+[node name="tablesMap" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1601.0
+offset_bottom = 901.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(797, 448)
+scale = Vector2(3.42187, 1.92578)
+texture = ExtResource("1_ifq2u")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 302.0
+offset_bottom = 123.0
+theme_override_fonts/font = ExtResource("2_v34ye")
+theme_override_font_sizes/font_size = 40
+text = "Selección de mesas:"
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 149.0
+offset_right = 1439.0
+offset_bottom = 863.0
+
+[node name="ColorRect" type="ColorRect" parent="Panel/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.876028, 0.813065, 0.820353, 1)
+
+[node name="ButtonTable" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 198.0
+offset_right = 342.0
+offset_bottom = 249.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 198.0
+offset_right = 584.0
+offset_bottom = 249.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 407.0
+offset_right = 535.0
+offset_bottom = 488.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable4" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 581.0
+offset_right = 537.0
+offset_bottom = 662.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable5" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 742.0
+offset_right = 537.0
+offset_bottom = 823.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable6" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 526.0
+offset_right = 944.0
+offset_bottom = 595.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable7" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1205.0
+offset_top = 527.0
+offset_right = 1275.0
+offset_bottom = 593.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable8" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 689.0
+offset_right = 944.0
+offset_bottom = 758.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonTable9" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1205.0
+offset_top = 690.0
+offset_right = 1275.0
+offset_bottom = 756.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 406.0
+offset_right = 1044.0
+offset_bottom = 859.0
+scale = Vector2(0.117, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 1018.0
+offset_top = 406.0
+offset_right = 1260.0
+offset_bottom = 652.0
+rotation = 1.5708
+scale = Vector2(0.133, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 1438.0
+offset_top = 409.0
+offset_right = 1665.0
+offset_bottom = 699.0
+rotation = 1.5708
+scale = Vector2(0.133, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 1369.0
+offset_top = 211.0
+offset_right = 1623.0
+offset_bottom = 615.0
+rotation = 1.5708
+scale = Vector2(0.133, 1)
+color = Color(0.866736, 0.27775, 0.128763, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 1006.0
+offset_top = 149.0
+offset_right = 1474.0
+offset_bottom = 190.0
+rotation = 1.5708
+scale = Vector2(0.133, 1)
+color = Color(0.866736, 0.27775, 0.128763, 1)
