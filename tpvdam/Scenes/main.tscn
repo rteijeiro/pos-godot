@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://dnwaf6smi8ml6"]
 
-[ext_resource type="Script" uid="uid://hbt0ajko3t7t" path="res://Scripts/main.gd" id="1_bo1nx"]
-[ext_resource type="Texture2D" uid="uid://c0d5qc1ol32pq" path="res://Assets/UI/Panel.png" id="2_8gbba"]
-[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="3_8gbba"]
-[ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://Assets/UI/ButtonActiveRounded.png" id="4_kry3j"]
-[ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="5_21xkr"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://c0d5qc1ol32pq" path="res://assets/UI/Panel.png" id="2_8gbba"]
+[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="3_8gbba"]
+[ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://assets/UI/ButtonActiveRounded.png" id="4_kry3j"]
+[ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://assets/UI/ButtonDefaultRounded.png" id="5_21xkr"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6bp64"]
 texture = ExtResource("4_kry3j")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctdrc8vyfu142"
-path="res://.godot/imported/GreenDot.png-e86faf38da5af390ff158897828319d6.ctex"
+path="res://.godot/imported/GreenDot.png-87e1bfcb090648c7b4504e059ac81cd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/GreenDot.png"
-dest_files=["res://.godot/imported/GreenDot.png-e86faf38da5af390ff158897828319d6.ctex"]
+source_file="res://assets/UI/GreenDot.png"
+dest_files=["res://.godot/imported/GreenDot.png-87e1bfcb090648c7b4504e059ac81cd5.ctex"]
 
 [params]
 
