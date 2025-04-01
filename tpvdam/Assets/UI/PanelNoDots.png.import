@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dimx1elsh2rof"
-path="res://.godot/imported/PanelNoDots.png-d2fa4062c9537860cbddd19242ce35ff.ctex"
+path="res://.godot/imported/PanelNoDots.png-35bc4fca6e92a69238de58feef4803e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/PanelNoDots.png"
-dest_files=["res://.godot/imported/PanelNoDots.png-d2fa4062c9537860cbddd19242ce35ff.ctex"]
+source_file="res://assets/UI/PanelNoDots.png"
+dest_files=["res://.godot/imported/PanelNoDots.png-35bc4fca6e92a69238de58feef4803e2.ctex"]
 
 [params]
 
