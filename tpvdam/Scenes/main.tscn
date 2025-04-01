@@ -1,3 +1,65 @@
-[gd_scene format=3 uid="uid://dnwaf6smi8ml6"]
+[gd_scene load_steps=8 format=3 uid="uid://dnwaf6smi8ml6"]
 
-[node name="main" type="Node2D"]
+[ext_resource type="Script" uid="uid://hbt0ajko3t7t" path="res://Scripts/main.gd" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://c0d5qc1ol32pq" path="res://Assets/UI/Panel.png" id="2_8gbba"]
+[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="3_8gbba"]
+[ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://Assets/UI/ButtonActiveRounded.png" id="4_kry3j"]
+[ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="5_21xkr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6bp64"]
+texture = ExtResource("4_kry3j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kry3j"]
+texture = ExtResource("5_21xkr")
+
+[node name="accessScreen" type="Node2D"]
+script = ExtResource("1_bo1nx")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1600.0
+offset_bottom = 900.0
+size_flags_horizontal = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(800, 450)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_8gbba")
+
+[node name="Button" type="Button" parent="Panel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = 128.0
+offset_right = 72.0
+offset_bottom = 184.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.16)
+theme_override_fonts/font = ExtResource("3_8gbba")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6bp64")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kry3j")
+text = "Access"
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.0
+offset_top = -143.0
+offset_right = 86.0
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "TPV DAM"
+horizontal_alignment = 1
