@@ -63,3 +63,5 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 40
 text = "TPV DAM"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
