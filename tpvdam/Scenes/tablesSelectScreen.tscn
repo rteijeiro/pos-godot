@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://d18orot2qk1pd"]
+[gd_scene load_steps=5 format=3 uid="uid://d18orot2qk1pd"]
 
 [ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_ifq2u"]
+[ext_resource type="Script" uid="uid://cdq1ig3qqyrys" path="res://Scripts/tables_select.gd" id="1_v34ye"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_v34ye"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqygr"]
 bg_color = Color(0.950516, 0.413653, 0.165663, 1)
 
 [node name="tablesMap" type="Node2D"]
+script = ExtResource("1_v34ye")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1601.0
@@ -120,6 +122,69 @@ offset_bottom = 756.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
 
+[node name="ButtonStool10" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1312.0
+offset_top = 258.0
+offset_right = 1342.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool11" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1248.0
+offset_top = 258.0
+offset_right = 1278.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool12" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1184.0
+offset_top = 258.0
+offset_right = 1214.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool13" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 258.0
+offset_right = 1150.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool14" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1057.0
+offset_top = 258.0
+offset_right = 1087.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool15" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 258.0
+offset_right = 1022.0
+offset_bottom = 292.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
+[node name="ButtonStool16" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 922.0
+offset_top = 177.0
+offset_right = 952.0
+offset_bottom = 211.0
+scale = Vector2(1.06995, 0.934041)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 layout_mode = 0
 offset_left = 736.0
@@ -165,3 +230,20 @@ offset_bottom = 190.0
 rotation = 1.5708
 scale = Vector2(0.133, 1)
 color = Color(0.866736, 0.27775, 0.128763, 1)
+
+[connection signal="pressed" from="Panel/ButtonTable" to="." method="_on_button_table_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable2" to="." method="_on_button_table_2_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable3" to="." method="_on_button_table_3_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable4" to="." method="_on_button_table_4_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable5" to="." method="_on_button_table_5_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable6" to="." method="_on_button_table_6_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable7" to="." method="_on_button_table_7_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable8" to="." method="_on_button_table_8_pressed"]
+[connection signal="pressed" from="Panel/ButtonTable9" to="." method="_on_button_table_9_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool10" to="." method="_on_button_stool_10_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool11" to="." method="_on_button_stool_11_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool12" to="." method="_on_button_stool_12_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool13" to="." method="_on_button_stool_13_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool14" to="." method="_on_button_stool_14_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool15" to="." method="_on_button_stool_15_pressed"]
+[connection signal="pressed" from="Panel/ButtonStool16" to="." method="_on_button_stool_16_pressed"]
