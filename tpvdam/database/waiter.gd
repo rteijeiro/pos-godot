@@ -6,8 +6,8 @@ var name:String=""
 var surname:String=""
 var image:String=""
 
-func _init(p_id:int=0, p_name:String="", p_surname:String="", p_image:String=""):
-	id = p_id
+func _init(p_name:String="", p_surname:String="", p_image:String=""):
+	id = 0
 	name = p_name
 	surname = p_surname
 	image = p_image

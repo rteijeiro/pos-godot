@@ -13,9 +13,9 @@ var diners:int=0
 var products:Array[int]=[]
 var status:int=statuses.AVAILABLE
 
-func _init(p_id:int=0, p_diners:int=0, p_products:Array[int]=[], 
+func _init(p_diners:int=0, p_products:Array[int]=[], 
 	p_status:int=statuses.AVAILABLE):
-	id = p_id
+	id = 0
 	diners = p_diners
 	products = p_products
 	status = p_status

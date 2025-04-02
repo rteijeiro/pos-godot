@@ -51,3 +51,17 @@ func array_to_json(array):
 		json_array.append(element.to_json())
 	return json_array
 	
+func add(element):
+	if element is Waiter:
+		element.id=waiters.back().id+1
+		waiters.append(element)
+	elif element is Table:
+		element.id=tables.back().id+1
+		tables.append(element)
+	elif element is Product:
+		element.id=products.back().id+1
+		products.append(element)
+	elif element is Payment:
+		element.id = payments.back().id+1
+		payments.append(element)
+	update_database()

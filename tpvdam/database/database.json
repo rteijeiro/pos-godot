@@ -35,6 +35,12 @@
 			"name": "Paco",
 			"surname": "García",
 			"image": "imagen"
+		},
+		{
+			"id": 7,
+			"name": "Álvaro",
+			"surname": "Pérez",
+			"image": "prueba.png"
 		}
 	],
 	"tables": [

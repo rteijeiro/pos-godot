@@ -20,9 +20,9 @@ var amount:float=0.0
 var paymentMethod:int=paymentMethods.CASH
 var status:int=statuses.PENDING
 
-func _init(p_id:int=0, p_timestamp=null, p_amount:float=0.0, 
+func _init(p_timestamp=null, p_amount:float=0.0, 
 	p_paymentMethod:int=paymentMethods.CASH, p_status:int=statuses.PENDING):
-	id = p_id
+	id = 0
 	timestamp = p_timestamp if p_timestamp != null else Time.get_datetime_dict_from_system()
 	amount = p_amount
 	paymentMethod = p_paymentMethod

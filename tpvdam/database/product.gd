@@ -17,9 +17,9 @@ var image:String=""
 var price:float=0.0
 var category:int=categories.STARTERS
 
-func _init(p_id:int=0, p_name:String="", p_image:String="", 
+func _init(p_name:String="", p_image:String="", 
 	p_price:float=0.0, p_category:int=categories.STARTERS):
-	id = p_id
+	id = 0
 	name = p_name
 	image = p_image
 	price = p_price
