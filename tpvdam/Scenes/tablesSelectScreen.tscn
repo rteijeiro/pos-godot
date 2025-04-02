@@ -1,11 +1,62 @@
-[gd_scene load_steps=5 format=3 uid="uid://d18orot2qk1pd"]
+[gd_scene load_steps=26 format=3 uid="uid://d18orot2qk1pd"]
 
 [ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_ifq2u"]
 [ext_resource type="Script" uid="uid://cdq1ig3qqyrys" path="res://Scripts/tables_select.gd" id="1_v34ye"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_v34ye"]
+[ext_resource type="Texture2D" uid="uid://bdt5vnm2ot01h" path="res://Assets/UI/floorTexture.png" id="4_58udh"]
+[ext_resource type="Texture2D" uid="uid://d0lbbxoqo5moc" path="res://Assets/UI/table.png" id="5_vfktf"]
+[ext_resource type="Texture2D" uid="uid://cehommf40x5y3" path="res://Assets/UI/tableLarge.png" id="6_4shgh"]
+[ext_resource type="Texture2D" uid="uid://crjunrhuqgde4" path="res://Assets/UI/tableSmall.png" id="7_pbun2"]
+[ext_resource type="Texture2D" uid="uid://c6ehbeta2j23d" path="res://Assets/UI/stool.png" id="8_ntg26"]
+[ext_resource type="Texture2D" uid="uid://cxqt8tqmvd0o4" path="res://Assets/UI/wood.png" id="9_njhve"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqygr"]
-bg_color = Color(0.950516, 0.413653, 0.165663, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l20ir"]
+texture = ExtResource("5_vfktf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ljgb7"]
+texture = ExtResource("5_vfktf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lb62m"]
+texture = ExtResource("6_4shgh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cxq16"]
+texture = ExtResource("6_4shgh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_merjw"]
+texture = ExtResource("6_4shgh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rs1kv"]
+texture = ExtResource("7_pbun2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8h08y"]
+texture = ExtResource("7_pbun2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7din5"]
+texture = ExtResource("7_pbun2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_my23s"]
+texture = ExtResource("7_pbun2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60r2a"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cmihl"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fsxls"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ga0c"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tw3tp"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0slgy"]
+texture = ExtResource("8_ntg26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_65heh"]
+texture = ExtResource("8_ntg26")
 
 [node name="tablesMap" type="Node2D"]
 script = ExtResource("1_v34ye")
@@ -35,92 +86,95 @@ offset_top = 149.0
 offset_right = 1439.0
 offset_bottom = 863.0
 
-[node name="ColorRect" type="ColorRect" parent="Panel/GridContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-color = Color(0.876028, 0.813065, 0.820353, 1)
+[node name="Sprite2D" type="Sprite2D" parent="Panel/GridContainer"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(656, 355)
+scale = Vector2(1.43388, 1.15385)
+texture = ExtResource("4_58udh")
+region_enabled = true
+region_rect = Rect2(2, 0, 915, 624)
 
 [node name="ButtonTable" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 211.0
-offset_top = 198.0
-offset_right = 342.0
-offset_bottom = 249.0
+offset_top = 185.0
+offset_right = 341.0
+offset_bottom = 285.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l20ir")
 
 [node name="ButtonTable2" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 453.0
-offset_top = 198.0
-offset_right = 584.0
-offset_bottom = 249.0
+offset_left = 452.0
+offset_top = 185.0
+offset_right = 582.0
+offset_bottom = 285.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ljgb7")
 
 [node name="ButtonTable3" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 238.0
-offset_top = 407.0
-offset_right = 535.0
-offset_bottom = 488.0
+offset_left = 170.0
+offset_top = 430.0
+offset_right = 350.0
+offset_bottom = 560.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_lb62m")
 
 [node name="ButtonTable4" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 240.0
-offset_top = 581.0
-offset_right = 537.0
-offset_bottom = 662.0
+offset_left = 490.0
+offset_top = 430.0
+offset_right = 670.0
+offset_bottom = 560.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_cxq16")
 
 [node name="ButtonTable5" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 240.0
-offset_top = 742.0
-offset_right = 537.0
-offset_bottom = 823.0
+offset_left = 320.0
+offset_top = 660.0
+offset_right = 500.0
+offset_bottom = 790.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_merjw")
 
 [node name="ButtonTable6" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 873.0
 offset_top = 526.0
-offset_right = 944.0
-offset_bottom = 595.0
+offset_right = 973.0
+offset_bottom = 626.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_rs1kv")
 
 [node name="ButtonTable7" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 1205.0
 offset_top = 527.0
-offset_right = 1275.0
-offset_bottom = 593.0
+offset_right = 1305.0
+offset_bottom = 627.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8h08y")
 
 [node name="ButtonTable8" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 873.0
 offset_top = 689.0
-offset_right = 944.0
-offset_bottom = 758.0
+offset_right = 973.0
+offset_bottom = 789.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7din5")
 
 [node name="ButtonTable9" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 1205.0
 offset_top = 690.0
-offset_right = 1275.0
-offset_bottom = 756.0
+offset_right = 1305.0
+offset_bottom = 790.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_my23s")
 
 [node name="ButtonStool10" type="Button" parent="Panel"]
 layout_mode = 0
@@ -129,7 +183,7 @@ offset_top = 258.0
 offset_right = 1342.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_60r2a")
 
 [node name="ButtonStool11" type="Button" parent="Panel"]
 layout_mode = 0
@@ -138,7 +192,7 @@ offset_top = 258.0
 offset_right = 1278.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_cmihl")
 
 [node name="ButtonStool12" type="Button" parent="Panel"]
 layout_mode = 0
@@ -147,7 +201,7 @@ offset_top = 258.0
 offset_right = 1214.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fsxls")
 
 [node name="ButtonStool13" type="Button" parent="Panel"]
 layout_mode = 0
@@ -156,7 +210,7 @@ offset_top = 258.0
 offset_right = 1150.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5ga0c")
 
 [node name="ButtonStool14" type="Button" parent="Panel"]
 layout_mode = 0
@@ -165,7 +219,7 @@ offset_top = 258.0
 offset_right = 1087.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_tw3tp")
 
 [node name="ButtonStool15" type="Button" parent="Panel"]
 layout_mode = 0
@@ -174,24 +228,26 @@ offset_top = 258.0
 offset_right = 1022.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0slgy")
 
 [node name="ButtonStool16" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 922.0
+offset_left = 949.0
 offset_top = 177.0
-offset_right = 952.0
+offset_right = 979.0
 offset_bottom = 211.0
+rotation = 1.5708
 scale = Vector2(1.06995, 0.934041)
-theme_override_styles/normal = SubResource("StyleBoxFlat_dqygr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_65heh")
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 layout_mode = 0
 offset_left = 736.0
 offset_top = 406.0
 offset_right = 1044.0
-offset_bottom = 859.0
+offset_bottom = 864.0
 scale = Vector2(0.117, 1)
+color = Color(0.470588, 0.470588, 0.470588, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="Panel"]
 layout_mode = 0
@@ -201,6 +257,7 @@ offset_right = 1260.0
 offset_bottom = 652.0
 rotation = 1.5708
 scale = Vector2(0.133, 1)
+color = Color(0.470076, 0.470076, 0.470076, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="Panel"]
 layout_mode = 0
@@ -210,26 +267,24 @@ offset_right = 1665.0
 offset_bottom = 699.0
 rotation = 1.5708
 scale = Vector2(0.133, 1)
+color = Color(0.470588, 0.470588, 0.470588, 1)
 
-[node name="ColorRect4" type="ColorRect" parent="Panel"]
-layout_mode = 0
-offset_left = 1369.0
-offset_top = 211.0
-offset_right = 1623.0
-offset_bottom = 615.0
-rotation = 1.5708
-scale = Vector2(0.133, 1)
-color = Color(0.866736, 0.27775, 0.128763, 1)
+[node name="Sprite2D2" type="Sprite2D" parent="Panel"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(1190, 226)
+scale = Vector2(0.527977, 0.195876)
+texture = ExtResource("9_njhve")
+region_rect = Rect2(0, 0, 100, 300)
 
-[node name="ColorRect5" type="ColorRect" parent="Panel"]
-layout_mode = 0
-offset_left = 1006.0
-offset_top = 149.0
-offset_right = 1474.0
-offset_bottom = 190.0
-rotation = 1.5708
-scale = Vector2(0.133, 1)
-color = Color(0.866736, 0.27775, 0.128763, 1)
+[node name="Sprite2D3" type="Sprite2D" parent="Panel"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(985.915, 194.39)
+rotation = -1.5708
+scale = Vector2(0.145036, 0.210807)
+texture = ExtResource("9_njhve")
+region_rect = Rect2(0, 0, 100, 300)
 
 [connection signal="pressed" from="Panel/ButtonTable" to="." method="_on_button_table_pressed"]
 [connection signal="pressed" from="Panel/ButtonTable2" to="." method="_on_button_table_2_pressed"]
