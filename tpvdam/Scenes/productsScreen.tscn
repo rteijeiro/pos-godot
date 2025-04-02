@@ -300,12 +300,26 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_j003w")
 [node name="PanelContainer2" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_left = 500.0
-offset_right = 1600.0
+offset_right = 760.0
 offset_bottom = 810.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_7i8pa")
 
 [node name="Panel" type="Panel" parent="Control/PanelContainer2"]
-custom_minimum_size = Vector2(1070, 780)
+custom_minimum_size = Vector2(240, 780)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufpyl")
+
+[node name="PanelContainer4" type="PanelContainer" parent="Control"]
+layout_mode = 0
+offset_left = 760.0
+offset_right = 1600.0
+offset_bottom = 810.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7i8pa")
+
+[node name="Panel" type="Panel" parent="Control/PanelContainer4"]
+custom_minimum_size = Vector2(810, 780)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -317,3 +331,126 @@ offset_top = 810.0
 offset_right = 1600.0
 offset_bottom = 900.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_fd3tu")
+
+[node name="Panel" type="Panel" parent="Control/PanelContainer3"]
+layout_mode = 2
+
+[node name="Button20" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 16.0
+offset_top = 14.0
+offset_right = 96.0
+offset_bottom = 44.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Imprimir"
+
+[node name="Button21" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 130.0
+offset_top = 14.0
+offset_right = 272.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Cobrar en efectivo"
+
+[node name="Button22" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 290.0
+offset_top = 14.0
+offset_right = 432.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Borrar"
+
+[node name="Button23" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 448.0
+offset_top = 14.0
+offset_right = 590.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Borrar"
+
+[node name="Button24" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 608.0
+offset_top = 14.0
+offset_right = 750.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Tickets"
+
+[node name="Button25" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 768.0
+offset_top = 14.0
+offset_right = 910.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Abrir cajón"
+
+[node name="Button26" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 928.0
+offset_top = 14.0
+offset_right = 1070.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Cambiar mesa"
+
+[node name="Button27" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 1088.0
+offset_top = 14.0
+offset_right = 1230.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Dividir ticket"
+
+[node name="Button28" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 1248.0
+offset_top = 14.0
+offset_right = 1390.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Pagos"
+
+[node name="Button29" type="Button" parent="Control/PanelContainer3/Panel"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+offset_left = 1408.0
+offset_top = 14.0
+offset_right = 1550.0
+offset_bottom = 74.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Cerrar sesión"
