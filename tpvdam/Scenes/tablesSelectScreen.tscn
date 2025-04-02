@@ -72,7 +72,8 @@ texture = ExtResource("1_ifq2u")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 302.0
+offset_left = 40.0
+offset_right = 481.0
 offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("2_v34ye")
 theme_override_font_sizes/font_size = 40
