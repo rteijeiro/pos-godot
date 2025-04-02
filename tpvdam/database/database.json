@@ -1,356 +1,357 @@
 {
-  "waiters": [
-    {
-      "id": 1,
-      "name": "Antonio",
-      "surname": "Sánchez",
-      "image": "antonio_sanchez.png"
-    },
-    {
-      "id": 2,
-      "name": "María",
-      "surname": "García",
-      "image": "maria_garcia.png"
-    },
-    {
-      "id": 3,
-      "name": "José",
-      "surname": "Ruiz",
-      "image": "jose_ruiz.png"
-    },
-    {
-      "id": 4,
-      "name": "Carmen",
-      "surname": "López",
-      "image": "carmen_lopez.png"
-    },
-    {
-      "id": 5,
-      "name": "Luis",
-      "surname": "Martínez",
-      "image": "luis_martinez.png"
-    }
-  ],
-  "tables": [
-    {
-      "id": 1,
-      "diners": 1,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 2,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 3,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 4,
-      "diners": 8,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 5,
-      "diners": 8,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 6,
-      "diners": 8,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 7,
-      "diners": 8,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 8,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 9,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 10,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    },
-    {
-      "id": 11,
-      "diners": 4,
-      "products": [],
-      "status": "AVAILABLE"
-    }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "name": "Tortilla Española",
-      "image": "starter_1.png",
-      "price": 6.5,
-      "category": "STARTERS"
-    },
-    {
-      "id": 2,
-      "name": "Patatas Bravas",
-      "image": "starter_2.png",
-      "price": 5.5,
-      "category": "STARTERS"
-    },
-    {
-      "id": 3,
-      "name": "Croquetas de Jamón",
-      "image": "starter_3.png",
-      "price": 4.75,
-      "category": "STARTERS"
-    },
-    {
-      "id": 4,
-      "name": "Gambas al Ajillo",
-      "image": "starter_4.png",
-      "price": 8.0,
-      "category": "STARTERS"
-    },
-    {
-      "id": 5,
-      "name": "Ensalada Mixta",
-      "image": "starter_5.png",
-      "price": 4.5,
-      "category": "STARTERS"
-    },
-    {
-      "id": 6,
-      "name": "Rabo de Toro",
-      "image": "meat_1.png",
-      "price": 15.99,
-      "category": "MEAT"
-    },
-    {
-      "id": 7,
-      "name": "Cochinillo Asado",
-      "image": "meat_2.png",
-      "price": 18.5,
-      "category": "MEAT"
-    },
-    {
-      "id": 8,
-      "name": "Chuletas de Cordero",
-      "image": "meat_3.png",
-      "price": 16.75,
-      "category": "MEAT"
-    },
-    {
-      "id": 9,
-      "name": "Solomillo a la Plancha",
-      "image": "meat_4.png",
-      "price": 17.99,
-      "category": "MEAT"
-    },
-    {
-      "id": 10,
-      "name": "Carne a la Parrilla",
-      "image": "meat_5.png",
-      "price": 14.5,
-      "category": "MEAT"
-    },
-    {
-      "id": 11,
-      "name": "Merluza a la Romana",
-      "image": "fish_1.png",
-      "price": 13.5,
-      "category": "FISH"
-    },
-    {
-      "id": 12,
-      "name": "Calamares a la Romana",
-      "image": "fish_2.png",
-      "price": 12.75,
-      "category": "FISH"
-    },
-    {
-      "id": 13,
-      "name": "Dorada al Horno",
-      "image": "fish_3.png",
-      "price": 16.5,
-      "category": "FISH"
-    },
-    {
-      "id": 14,
-      "name": "Sardinas a la Plancha",
-      "image": "fish_4.png",
-      "price": 11.0,
-      "category": "FISH"
-    },
-    {
-      "id": 15,
-      "name": "Bacalao al Pil Pil",
-      "image": "fish_5.png",
-      "price": 15.0,
-      "category": "FISH"
-    },
-    {
-      "id": 16,
-      "name": "Espaguetis con Albóndigas",
-      "image": "pasta_1.png",
-      "price": 11.5,
-      "category": "PASTA"
-    },
-    {
-      "id": 17,
-      "name": "Macarrones con Chorizo",
-      "image": "pasta_2.png",
-      "price": 10.99,
-      "category": "PASTA"
-    },
-    {
-      "id": 18,
-      "name": "Fideuà",
-      "image": "pasta_3.png",
-      "price": 12.75,
-      "category": "PASTA"
-    },
-    {
-      "id": 19,
-      "name": "Fideos a la Marinera",
-      "image": "pasta_4.png",
-      "price": 13.99,
-      "category": "PASTA"
-    },
-    {
-      "id": 20,
-      "name": "Pasta con Pisto",
-      "image": "pasta_5.png",
-      "price": 11.25,
-      "category": "PASTA"
-    },
-    {
-      "id": 21,
-      "name": "Churros con Chocolate",
-      "image": "dessert_1.png",
-      "price": 4.5,
-      "category": "DESSERTS"
-    },
-    {
-      "id": 22,
-      "name": "Crema Catalana",
-      "image": "dessert_2.png",
-      "price": 5.5,
-      "category": "DESSERTS"
-    },
-    {
-      "id": 23,
-      "name": "Tarta de Santiago",
-      "image": "dessert_3.png",
-      "price": 6.0,
-      "category": "DESSERTS"
-    },
-    {
-      "id": 24,
-      "name": "Flan de Huevo",
-      "image": "dessert_4.png",
-      "price": 3.75,
-      "category": "DESSERTS"
-    },
-    {
-      "id": 25,
-      "name": "Arroz con Leche",
-      "image": "dessert_5.png",
-      "price": 4.25,
-      "category": "DESSERTS"
-    },
-    {
-      "id": 26,
-      "name": "Sangría",
-      "image": "drink_1.png",
-      "price": 6.99,
-      "category": "DRINKS"
-    },
-    {
-      "id": 27,
-      "name": "Cerveza Estrella",
-      "image": "drink_2.png",
-      "price": 3.5,
-      "category": "DRINKS"
-    },
-    {
-      "id": 28,
-      "name": "Tinto de Verano",
-      "image": "drink_3.png",
-      "price": 4.0,
-      "category": "DRINKS"
-    },
-    {
-      "id": 29,
-      "name": "Agua Mineral",
-      "image": "drink_4.png",
-      "price": 2.0,
-      "category": "DRINKS"
-    },
-    {
-      "id": 30,
-      "name": "Vino Tinto",
-      "image": "drink_5.png",
-      "price": 5.0,
-      "category": "DRINKS"
-    }
-  ],
-  "payments": [
-    {
-      "id": 1,
-      "tableId": 3,
-      "timestamp": "2025-03-31T14:23:00",
-      "amount": 45.5,
-      "paymentMethod": "CARD",
-      "status": "COMPLETED"
-    },
-    {
-      "id": 2,
-      "tableId": 1,
-      "timestamp": "2025-04-01T12:45:00",
-      "amount": 32.99,
-      "paymentMethod": "CASH",
-      "status": "COMPLETED"
-    },
-    {
-      "id": 3,
-      "tableId": 4,
-      "timestamp": "2025-04-01T19:30:00",
-      "amount": 58.75,
-      "paymentMethod": "CARD",
-      "status": "PENDING"
-    },
-    {
-      "id": 4,
-      "tableId": 2,
-      "timestamp": "2025-03-30T21:10:00",
-      "amount": 27.5,
-      "paymentMethod": "CASH",
-      "status": "CANCELLED"
-    },
-    {
-      "id": 5,
-      "tableId": 5,
-      "timestamp": "2025-04-01T18:15:00",
-      "amount": 49.99,
-      "paymentMethod": "CARD",
-      "status": "COMPLETED"
-    }
-  ]
+	"waiters": [
+		{
+			"id": 1,
+			"name": "Antonio",
+			"surname": "Sánchez",
+			"image": "antonio_sanchez.png"
+		},
+		{
+			"id": 2,
+			"name": "María",
+			"surname": "García",
+			"image": "maria_garcia.png"
+		},
+		{
+			"id": 3,
+			"name": "José",
+			"surname": "Ruiz",
+			"image": "jose_ruiz.png"
+		},
+		{
+			"id": 4,
+			"name": "Carmen",
+			"surname": "López",
+			"image": "carmen_lopez.png"
+		},
+		{
+			"id": 5,
+			"name": "Luis",
+			"surname": "Martínez",
+			"image": "luis_martinez.png"
+		},
+		{
+			"id": 6,
+			"name": "Paco",
+			"surname": "García",
+			"image": "imagen"
+		}
+	],
+	"tables": [
+		{
+			"id": 1,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 2,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 3,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 4,
+			"diners": 8,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 5,
+			"diners": 8,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 6,
+			"diners": 8,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 7,
+			"diners": 8,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 8,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 9,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 10,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 11,
+			"diners": 4,
+			"products": [],
+			"status": "AVAILABLE"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Tortilla Española",
+			"image": "starter_1.png",
+			"price": 6.5,
+			"category": "STARTERS"
+		},
+		{
+			"id": 2,
+			"name": "Patatas Bravas",
+			"image": "starter_2.png",
+			"price": 5.5,
+			"category": "STARTERS"
+		},
+		{
+			"id": 3,
+			"name": "Croquetas de Jamón",
+			"image": "starter_3.png",
+			"price": 4.75,
+			"category": "STARTERS"
+		},
+		{
+			"id": 4,
+			"name": "Gambas al Ajillo",
+			"image": "starter_4.png",
+			"price": 8.0,
+			"category": "STARTERS"
+		},
+		{
+			"id": 5,
+			"name": "Ensalada Mixta",
+			"image": "starter_5.png",
+			"price": 4.5,
+			"category": "STARTERS"
+		},
+		{
+			"id": 6,
+			"name": "Rabo de Toro",
+			"image": "meat_1.png",
+			"price": 15.99,
+			"category": "MEAT"
+		},
+		{
+			"id": 7,
+			"name": "Cochinillo Asado",
+			"image": "meat_2.png",
+			"price": 18.5,
+			"category": "MEAT"
+		},
+		{
+			"id": 8,
+			"name": "Chuletas de Cordero",
+			"image": "meat_3.png",
+			"price": 16.75,
+			"category": "MEAT"
+		},
+		{
+			"id": 9,
+			"name": "Solomillo a la Plancha",
+			"image": "meat_4.png",
+			"price": 17.99,
+			"category": "MEAT"
+		},
+		{
+			"id": 10,
+			"name": "Carne a la Parrilla",
+			"image": "meat_5.png",
+			"price": 14.5,
+			"category": "MEAT"
+		},
+		{
+			"id": 11,
+			"name": "Merluza a la Romana",
+			"image": "fish_1.png",
+			"price": 13.5,
+			"category": "FISH"
+		},
+		{
+			"id": 12,
+			"name": "Calamares a la Romana",
+			"image": "fish_2.png",
+			"price": 12.75,
+			"category": "FISH"
+		},
+		{
+			"id": 13,
+			"name": "Dorada al Horno",
+			"image": "fish_3.png",
+			"price": 16.5,
+			"category": "FISH"
+		},
+		{
+			"id": 14,
+			"name": "Sardinas a la Plancha",
+			"image": "fish_4.png",
+			"price": 11.0,
+			"category": "FISH"
+		},
+		{
+			"id": 15,
+			"name": "Bacalao al Pil Pil",
+			"image": "fish_5.png",
+			"price": 15.0,
+			"category": "FISH"
+		},
+		{
+			"id": 16,
+			"name": "Espaguetis con Albóndigas",
+			"image": "pasta_1.png",
+			"price": 11.5,
+			"category": "PASTA"
+		},
+		{
+			"id": 17,
+			"name": "Macarrones con Chorizo",
+			"image": "pasta_2.png",
+			"price": 10.99,
+			"category": "PASTA"
+		},
+		{
+			"id": 18,
+			"name": "Fideuà",
+			"image": "pasta_3.png",
+			"price": 12.75,
+			"category": "PASTA"
+		},
+		{
+			"id": 19,
+			"name": "Fideos a la Marinera",
+			"image": "pasta_4.png",
+			"price": 13.99,
+			"category": "PASTA"
+		},
+		{
+			"id": 20,
+			"name": "Pasta con Pisto",
+			"image": "pasta_5.png",
+			"price": 11.25,
+			"category": "PASTA"
+		},
+		{
+			"id": 21,
+			"name": "Churros con Chocolate",
+			"image": "dessert_1.png",
+			"price": 4.5,
+			"category": "DESSERTS"
+		},
+		{
+			"id": 22,
+			"name": "Crema Catalana",
+			"image": "dessert_2.png",
+			"price": 5.5,
+			"category": "DESSERTS"
+		},
+		{
+			"id": 23,
+			"name": "Tarta de Santiago",
+			"image": "dessert_3.png",
+			"price": 6.0,
+			"category": "DESSERTS"
+		},
+		{
+			"id": 24,
+			"name": "Flan de Huevo",
+			"image": "dessert_4.png",
+			"price": 3.75,
+			"category": "DESSERTS"
+		},
+		{
+			"id": 25,
+			"name": "Arroz con Leche",
+			"image": "dessert_5.png",
+			"price": 4.25,
+			"category": "DESSERTS"
+		},
+		{
+			"id": 26,
+			"name": "Sangría",
+			"image": "drink_1.png",
+			"price": 6.99,
+			"category": "DRINKS"
+		},
+		{
+			"id": 27,
+			"name": "Cerveza Estrella",
+			"image": "drink_2.png",
+			"price": 3.5,
+			"category": "DRINKS"
+		},
+		{
+			"id": 28,
+			"name": "Tinto de Verano",
+			"image": "drink_3.png",
+			"price": 4.0,
+			"category": "DRINKS"
+		},
+		{
+			"id": 29,
+			"name": "Agua Mineral",
+			"image": "drink_4.png",
+			"price": 2.0,
+			"category": "DRINKS"
+		},
+		{
+			"id": 30,
+			"name": "Vino Tinto",
+			"image": "drink_5.png",
+			"price": 5.0,
+			"category": "DRINKS"
+		}
+	],
+	"payments": [
+		{
+			"id": 1,
+			"timestamp": "2025-03-31T14:23:00",
+			"amount": 45.5,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 2,
+			"timestamp": "2025-04-01T12:45:00",
+			"amount": 32.99,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 3,
+			"timestamp": "2025-04-01T19:30:00",
+			"amount": 58.75,
+			"paymentMethod": "CARD",
+			"status": "PENDING"
+		},
+		{
+			"id": 4,
+			"timestamp": "2025-03-30T21:10:00",
+			"amount": 27.5,
+			"paymentMethod": "CASH",
+			"status": "CANCELLED"
+		},
+		{
+			"id": 5,
+			"timestamp": "2025-04-01T18:15:00",
+			"amount": 49.99,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		}
+	]
 }

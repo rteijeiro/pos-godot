@@ -20,9 +20,41 @@ var amount:float=0.0
 var paymentMethod:int=paymentMethods.CASH
 var status:int=statuses.PENDING
 
-func read_json(json):
+func _init(p_id:int=0, p_timestamp=null, p_amount:float=0.0, 
+	p_paymentMethod:int=paymentMethods.CASH, p_status:int=statuses.PENDING):
+	id = p_id
+	timestamp = p_timestamp if p_timestamp != null else Time.get_datetime_dict_from_system()
+	amount = p_amount
+	paymentMethod = p_paymentMethod
+	status = p_status
+
+func from_json(json):
 	id=int(json["id"])
 	timestamp=Time.get_datetime_dict_from_datetime_string(json["timestamp"],false)
 	amount=float(json["amount"])
 	paymentMethod=paymentMethod_map[json["paymentMethod"]]
 	status=status_map[json["status"]]
+
+func to_json() -> Dictionary:
+	var payment_method_str = ""
+	var status_str = ""
+
+	for key in paymentMethod_map:
+		if paymentMethod_map[key] == paymentMethod:
+			payment_method_str = key
+			break
+
+	for key in status_map:
+		if status_map[key] == status:
+			status_str = key
+			break
+
+	var timestamp_str = Time.get_datetime_string_from_datetime_dict(timestamp, false)
+	
+	return {
+		"id": id,
+		"timestamp": timestamp_str,
+		"amount": amount,
+		"paymentMethod": payment_method_str,
+		"status": status_str
+	}
