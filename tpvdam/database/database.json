@@ -46,19 +46,19 @@
 	"tables": [
 		{
 			"id": 1,
-			"diners": 1,
+			"diners": 6,
 			"products": [],
 			"status": "AVAILABLE"
 		},
 		{
 			"id": 2,
-			"diners": 4,
+			"diners": 6,
 			"products": [],
 			"status": "AVAILABLE"
 		},
 		{
 			"id": 3,
-			"diners": 4,
+			"diners": 8,
 			"products": [],
 			"status": "AVAILABLE"
 		},
@@ -76,13 +76,13 @@
 		},
 		{
 			"id": 6,
-			"diners": 8,
+			"diners": 4,
 			"products": [],
 			"status": "AVAILABLE"
 		},
 		{
 			"id": 7,
-			"diners": 8,
+			"diners": 4,
 			"products": [],
 			"status": "AVAILABLE"
 		},
@@ -100,13 +100,43 @@
 		},
 		{
 			"id": 10,
-			"diners": 4,
+			"diners": 1,
 			"products": [],
 			"status": "AVAILABLE"
 		},
 		{
 			"id": 11,
-			"diners": 4,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 12,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 13,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 14,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 15,
+			"diners": 1,
+			"products": [],
+			"status": "AVAILABLE"
+		},
+		{
+			"id": 16,
+			"diners": 1,
 			"products": [],
 			"status": "AVAILABLE"
 		}
