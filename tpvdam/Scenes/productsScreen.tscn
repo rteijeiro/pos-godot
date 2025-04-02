@@ -1,0 +1,319 @@
+[gd_scene load_steps=10 format=3 uid="uid://pkq8txdfdkee"]
+
+[ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_flv86"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sagky"]
+bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r7ot5"]
+bg_color = Color(0.431373, 0, 0.913725, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pto0e"]
+bg_color = Color(0.206002, 0.193517, 0.386287, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w2aud"]
+texture = ExtResource("1_flv86")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j003w"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7i8pa"]
+bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufpyl"]
+bg_color = Color(0.431373, 0, 0.913725, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fd3tu"]
+bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 810.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sagky")
+
+[node name="Panel" type="Panel" parent="Control/PanelContainer"]
+custom_minimum_size = Vector2(470, 780)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.98
+theme_override_styles/panel = SubResource("StyleBoxFlat_r7ot5")
+
+[node name="Panel" type="Panel" parent="Control/PanelContainer/Panel"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 513.0
+offset_right = 441.0
+offset_bottom = 745.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pto0e")
+
+[node name="Button" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+offset_left = 21.0
+offset_top = 6.0
+offset_right = 101.0
+offset_bottom = 36.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "AC"
+
+[node name="Button3" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 21.0
+offset_top = 56.0
+offset_right = 101.0
+offset_bottom = 86.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "7"
+
+[node name="Button4" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 115.0
+offset_top = 56.0
+offset_right = 195.0
+offset_bottom = 86.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "8"
+
+[node name="Button19" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 115.0
+offset_top = 6.0
+offset_right = 195.0
+offset_bottom = 36.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "Borrar"
+
+[node name="Button5" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 209.0
+offset_top = 56.0
+offset_right = 289.0
+offset_bottom = 86.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "9"
+
+[node name="Button6" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 303.0
+offset_top = 56.0
+offset_right = 383.0
+offset_bottom = 86.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "+"
+
+[node name="Button7" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 21.0
+offset_top = 101.0
+offset_right = 101.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "4"
+
+[node name="Button8" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 115.0
+offset_top = 101.0
+offset_right = 195.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "5"
+
+[node name="Button9" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 209.0
+offset_top = 101.0
+offset_right = 289.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "6"
+
+[node name="Button10" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 303.0
+offset_top = 101.0
+offset_right = 383.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "*"
+
+[node name="Button11" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 21.0
+offset_top = 190.0
+offset_right = 101.0
+offset_bottom = 220.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "="
+
+[node name="Button12" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 115.0
+offset_top = 190.0
+offset_right = 195.0
+offset_bottom = 220.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "0"
+
+[node name="Button13" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 209.0
+offset_top = 190.0
+offset_right = 289.0
+offset_bottom = 220.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = ","
+
+[node name="Button14" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 303.0
+offset_top = 190.0
+offset_right = 383.0
+offset_bottom = 220.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "/"
+
+[node name="Button15" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 21.0
+offset_top = 145.0
+offset_right = 101.0
+offset_bottom = 175.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "1"
+
+[node name="Button16" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 115.0
+offset_top = 145.0
+offset_right = 195.0
+offset_bottom = 175.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "2"
+
+[node name="Button17" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 209.0
+offset_top = 145.0
+offset_right = 289.0
+offset_bottom = 175.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "3"
+
+[node name="Button18" type="Button" parent="Control/PanelContainer/Panel/Panel"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+offset_left = 303.0
+offset_top = 145.0
+offset_right = 383.0
+offset_bottom = 175.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
+text = "-"
+
+[node name="Label" type="Label" parent="Control/PanelContainer/Panel/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 8.0
+offset_right = 384.0
+offset_bottom = 30.3333
+theme_override_styles/normal = SubResource("StyleBoxFlat_j003w")
+
+[node name="PanelContainer2" type="PanelContainer" parent="Control"]
+layout_mode = 0
+offset_left = 500.0
+offset_right = 1600.0
+offset_bottom = 810.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7i8pa")
+
+[node name="Panel" type="Panel" parent="Control/PanelContainer2"]
+custom_minimum_size = Vector2(1070, 780)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufpyl")
+
+[node name="PanelContainer3" type="PanelContainer" parent="Control"]
+layout_mode = 0
+offset_top = 810.0
+offset_right = 1600.0
+offset_bottom = 900.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fd3tu")
