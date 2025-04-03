@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://pkq8txdfdkee"]
+[gd_scene load_steps=13 format=3 uid="uid://pkq8txdfdkee"]
 
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_flv86"]
+[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="1_sagky"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sagky"]
 bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
@@ -40,8 +41,18 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7ot5"]
+texture = ExtResource("1_flv86")
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fd3tu"]
 bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2aud"]
+bg_color = Color(0.431373, 0, 0.913725, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [node name="productsScreen" type="Node2D"]
 
@@ -51,13 +62,13 @@ anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
 
-[node name="PanelContainer" type="PanelContainer" parent="Control"]
+[node name="PanelContainerCalculator" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_right = 500.0
 offset_bottom = 810.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_sagky")
 
-[node name="Panel" type="Panel" parent="Control/PanelContainer"]
+[node name="Panel" type="Panel" parent="Control/PanelContainerCalculator"]
 custom_minimum_size = Vector2(470, 780)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -65,7 +76,42 @@ size_flags_vertical = 4
 size_flags_stretch_ratio = 1.98
 theme_override_styles/panel = SubResource("StyleBoxFlat_r7ot5")
 
-[node name="Panel" type="Panel" parent="Control/PanelContainer/Panel"]
+[node name="PanelProductos" type="Panel" parent="Control/PanelContainerCalculator/Panel"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 17.0
+offset_right = 441.0
+offset_bottom = 497.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pto0e")
+
+[node name="LabelListProductos" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelProductos"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.017
+anchor_right = 1.0
+anchor_bottom = 0.067
+offset_left = 8.0
+offset_top = -0.160001
+offset_right = -8.0
+offset_bottom = -0.16
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_sagky")
+text = "Lista de productos:"
+
+[node name="Label2" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelProductos"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.067
+anchor_right = 1.0
+anchor_bottom = 0.983
+offset_left = 8.0
+offset_top = -0.16
+offset_right = -8.0
+offset_bottom = 0.159973
+grow_horizontal = 2
+
+[node name="PanelCalculator" type="Panel" parent="Control/PanelContainerCalculator/Panel"]
 layout_mode = 0
 offset_left = 33.0
 offset_top = 505.0
@@ -73,7 +119,7 @@ offset_right = 441.0
 offset_bottom = 745.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_pto0e")
 
-[node name="NumSymbolCalculator" type="GridContainer" parent="Control/PanelContainer/Panel/Panel"]
+[node name="NumSymbolCalculator" type="GridContainer" parent="Control/PanelContainerCalculator/Panel/PanelCalculator"]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 0
 offset_left = 16.0
@@ -82,7 +128,7 @@ offset_right = 392.0
 offset_bottom = 236.0
 columns = 4
 
-[node name="ButtonNum7" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum7" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -90,7 +136,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "7"
 
-[node name="ButtonNum8" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum8" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -98,7 +144,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "8"
 
-[node name="ButtonNum9" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum9" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -106,7 +152,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "9"
 
-[node name="ButtonSymbolPlus" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbolPlus" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -114,7 +160,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "+"
 
-[node name="ButtonNum4" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum4" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -122,7 +168,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "4"
 
-[node name="ButtonNum5" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum5" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -130,7 +176,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "5"
 
-[node name="ButtonNum6" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum6" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -138,7 +184,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "6"
 
-[node name="ButtonSymbolMulti" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbolMulti" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -146,7 +192,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "*"
 
-[node name="ButtonNum1" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum1" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -154,7 +200,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "1"
 
-[node name="ButtonNum2" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum2" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -162,7 +208,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "2"
 
-[node name="ButtonNum3" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum3" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -170,7 +216,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "3"
 
-[node name="ButtonSymbol-" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbol-" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -178,7 +224,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "-"
 
-[node name="ButtonSymbol=" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbol=" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -186,7 +232,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "="
 
-[node name="ButtonNum0" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonNum0" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -194,7 +240,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "0"
 
-[node name="ButtonSymbolDecimal" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbolDecimal" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -202,7 +248,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = ","
 
-[node name="ButtonSymbolDivider" type="Button" parent="Control/PanelContainer/Panel/Panel/NumSymbolCalculator"]
+[node name="ButtonSymbolDivider" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -210,7 +256,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "/"
 
-[node name="SuperiorButton" type="GridContainer" parent="Control/PanelContainer/Panel/Panel"]
+[node name="SuperiorButton" type="GridContainer" parent="Control/PanelContainerCalculator/Panel/PanelCalculator"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -224,7 +270,7 @@ size_flags_horizontal = 10
 size_flags_vertical = 3
 columns = 4
 
-[node name="Button" type="Button" parent="Control/PanelContainer/Panel/Panel/SuperiorButton"]
+[node name="Button" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/SuperiorButton"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -232,7 +278,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "AC"
 
-[node name="Button19" type="Button" parent="Control/PanelContainer/Panel/Panel/SuperiorButton"]
+[node name="Button19" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/SuperiorButton"]
 custom_minimum_size = Vector2(91, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -240,168 +286,196 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Borrar"
 
-[node name="Label" type="Label" parent="Control/PanelContainer/Panel/Panel/SuperiorButton"]
+[node name="Label" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/SuperiorButton"]
 custom_minimum_size = Vector2(185, 40)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_j003w")
 
-[node name="PanelContainer2" type="PanelContainer" parent="Control"]
+[node name="PanelContainerProducts" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_left = 500.0
 offset_right = 760.0
 offset_bottom = 810.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_7i8pa")
 
-[node name="Panel" type="Panel" parent="Control/PanelContainer2"]
+[node name="Panel" type="Panel" parent="Control/PanelContainerProducts"]
 custom_minimum_size = Vector2(240, 780)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_ufpyl")
 
-[node name="PanelContainer4" type="PanelContainer" parent="Control"]
+[node name="GridContainer" type="GridContainer" parent="Control/PanelContainerProducts/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -112.0
+offset_right = 112.0
+offset_bottom = 777.0
+grow_horizontal = 2
+
+[node name="Button" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Entrantes"
+
+[node name="Button2" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Carnes"
+
+[node name="Button3" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Pescados"
+
+[node name="Button4" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Pasta"
+
+[node name="Button5" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Postres"
+
+[node name="Button6" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
+text = "Bebidas	"
+
+[node name="PanelContainerProductsList" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_left = 760.0
 offset_right = 1600.0
 offset_bottom = 810.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_7i8pa")
 
-[node name="Panel" type="Panel" parent="Control/PanelContainer4"]
+[node name="Panel" type="Panel" parent="Control/PanelContainerProductsList"]
 custom_minimum_size = Vector2(810, 780)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_ufpyl")
 
-[node name="PanelContainer3" type="PanelContainer" parent="Control"]
+[node name="PanelContainerOthersButtons" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_top = 810.0
 offset_right = 1600.0
 offset_bottom = 900.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_fd3tu")
 
-[node name="Panel" type="Panel" parent="Control/PanelContainer3"]
+[node name="Panel" type="Panel" parent="Control/PanelContainerOthersButtons"]
+custom_minimum_size = Vector2(1570, 80)
 layout_mode = 2
-
-[node name="ButtonPrint" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
-layout_mode = 2
-offset_left = 16.0
-offset_top = 14.0
-offset_right = 96.0
-offset_bottom = 44.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_w2aud")
+
+[node name="GridContainer" type="GridContainer" parent="Control/PanelContainerOthersButtons/Panel"]
+layout_mode = 0
+offset_right = 1570.0
+offset_bottom = 81.0
+columns = 10
+
+[node name="ButtonPrint" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Imprimir"
 
-[node name="ButtonPay" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="ButtonPay" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 130.0
-offset_top = 14.0
-offset_right = 272.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cobrar en efectivo"
 
-[node name="ButtonDelete" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="ButtonDelete" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 290.0
-offset_top = 14.0
-offset_right = 432.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Borrar"
 
-[node name="Button23" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button23" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 448.0
-offset_top = 14.0
-offset_right = 590.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Añadir nota
 "
 
-[node name="Button24" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button24" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 608.0
-offset_top = 14.0
-offset_right = 750.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Tickets"
 
-[node name="Button25" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button25" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 768.0
-offset_top = 14.0
-offset_right = 910.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Abrir cajón"
 
-[node name="Button26" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button26" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 928.0
-offset_top = 14.0
-offset_right = 1070.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cambiar mesa"
 
-[node name="Button27" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button27" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 1088.0
-offset_top = 14.0
-offset_right = 1230.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Dividir ticket"
 
-[node name="Button28" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button28" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 1248.0
-offset_top = 14.0
-offset_right = 1390.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Pagos"
 
-[node name="Button29" type="Button" parent="Control/PanelContainer3/Panel"]
-custom_minimum_size = Vector2(100, 60)
+[node name="Button29" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
-offset_left = 1408.0
-offset_top = 14.0
-offset_right = 1550.0
-offset_bottom = 74.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 6
+size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cerrar sesión"
