@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://pkq8txdfdkee"]
+[gd_scene load_steps=13 format=3 uid="uid://dy5vdmryo4k8e"]
 
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_flv86"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="1_sagky"]

@@ -15,7 +15,7 @@ func _load_database():
 		var database=JSON.parse_string(text)
 		_read_json(database)
 	else:
-		push_error("Error loading database")
+		assert(false,"Error loading database")
 		get_tree().quit(1)
 
 func _read_json(json):

@@ -29,16 +29,9 @@ func from_json(json):
 	status=status_map[json["status"]]
 
 func to_json() -> Dictionary:
-	var status_str = ""
-
-	for key in status_map:
-		if status_map[key] == status:
-			status_str = key
-			break
-	
 	return {
 		"id": id,
 		"diners": diners,
-		"products": products,
-		"status": status_str
+		"products": [],
+		"status": "AVAILABLE"
 	}
