@@ -4,43 +4,43 @@
 			"id": 1,
 			"name": "Antonio",
 			"surname": "Sánchez",
-			"image": "antonio_sanchez.png"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 2,
 			"name": "María",
 			"surname": "García",
-			"image": "maria_garcia.png"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 3,
 			"name": "José",
 			"surname": "Ruiz",
-			"image": "jose_ruiz.png"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 4,
 			"name": "Carmen",
 			"surname": "López",
-			"image": "carmen_lopez.png"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 5,
 			"name": "Luis",
 			"surname": "Martínez",
-			"image": "luis_martinez.png"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 6,
 			"name": "Paco",
 			"surname": "García",
-			"image": "imagen"
+			"image": "res://icon.svg"
 		},
 		{
 			"id": 7,
 			"name": "Álvaro",
 			"surname": "Pérez",
-			"image": "prueba.png"
+			"image": "res://icon.svg"
 		}
 	],
 	"tables": [

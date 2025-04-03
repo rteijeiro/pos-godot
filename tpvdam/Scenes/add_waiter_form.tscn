@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://cvbef8glgtoe"]
+[gd_scene load_steps=14 format=3 uid="uid://cvbef8glgtoe"]
 
+[ext_resource type="Script" uid="uid://bc2c0e3rtnkqw" path="res://Scripts/add_waiter_form.gd" id="1_3l3l3"]
 [ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_o6oae"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_1e8rt"]
 [ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://Assets/UI/ButtonActiveRounded.png" id="3_tkv2v"]
@@ -34,6 +35,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3l3l3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -81,7 +83,7 @@ theme_override_font_sizes/font_size = 30
 text = "Name: "
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/NameContainer"]
+[node name="NameEdit" type="LineEdit" parent="VBoxContainer/NameContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1e8rt")
 theme_override_font_sizes/font_size = 30
@@ -99,7 +101,7 @@ theme_override_font_sizes/font_size = 30
 text = "Surname: "
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/SurnameContainer"]
+[node name="SurnameEdit" type="LineEdit" parent="VBoxContainer/SurnameContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1e8rt")
 theme_override_font_sizes/font_size = 30
@@ -127,7 +129,7 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_tkv2v")
 theme_override_styles/normal = SubResource("StyleBoxTexture_f3ook")
 text = "Add "
 
-[node name="Button" type="Button" parent="."]
+[node name="BackButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.008

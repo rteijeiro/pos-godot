@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl28j6qgswg3b"]
+
+[ext_resource type="Texture2D" uid="uid://bbxm31i2j4yp3" path="res://icon.svg" id="1_1r2pp"]
+[ext_resource type="Script" uid="uid://be4eiqhlf5o6m" path="res://Scripts/waiter_card.gd" id="1_df0et"]
+[ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_df0et"]
+
+[node name="WaiterCard" type="Button"]
+custom_minimum_size = Vector2(300, 300)
+anchors_preset = -1
+anchor_right = 0.187
+anchor_bottom = 0.333
+offset_right = -291.2
+offset_bottom = -291.7
+script = ExtResource("1_df0et")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="WaiterImage" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_1r2pp")
+stretch_mode = 5
+
+[node name="WaiterName" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_df0et")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
