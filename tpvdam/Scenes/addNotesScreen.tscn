@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsjamf7fwlne7"]
+
+[ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_eto6u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7bs2"]
+bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8aq6d"]
+bg_color = Color(0.431373, 0, 0.913725, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_745xg"]
+texture = ExtResource("1_eto6u")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 40.0
+anchor_bottom = 22.5
+offset_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 517.0
+offset_top = 45.0
+offset_right = 1117.0
+offset_bottom = 795.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g7bs2")
+
+[node name="Panel" type="Panel" parent="Control/Panel/PanelContainer"]
+custom_minimum_size = Vector2(570, 720)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_8aq6d")
+
+[node name="Label" type="Label" parent="Control/Panel/PanelContainer/Panel"]
+layout_mode = 0
+offset_right = 570.0
+offset_bottom = 37.0
+text = "Añadir notas:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control/Panel/PanelContainer/Panel"]
+layout_mode = 0
+offset_top = 38.0
+offset_right = 570.0
+offset_bottom = 549.0
+
+[node name="Button" type="Button" parent="Control/Panel/PanelContainer/Panel"]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 620.0
+offset_right = 353.0
+offset_bottom = 684.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_745xg")
+text = "Añadir"

@@ -39,7 +39,7 @@ func _on_button_delete_pressed() -> void:
 
 
 func _on_button_add_notes_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/addNotesScreen.tscn")
 
 
 func _on_button_tickets_pressed() -> void:
