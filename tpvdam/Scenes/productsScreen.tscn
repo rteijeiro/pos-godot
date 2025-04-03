@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://dy5vdmryo4k8e"]
+[gd_scene load_steps=14 format=3 uid="uid://pkq8txdfdkee"]
 
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_flv86"]
+[ext_resource type="Script" uid="uid://cgqmeiplb4iey" path="res://Scripts/products_screen.gd" id="1_r7ot5"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="1_sagky"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sagky"]
@@ -55,6 +56,7 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [node name="productsScreen" type="Node2D"]
+script = ExtResource("1_r7ot5")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -317,7 +319,7 @@ offset_right = 112.0
 offset_bottom = 777.0
 grow_horizontal = 2
 
-[node name="Button" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonStarters" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -325,7 +327,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Entrantes"
 
-[node name="Button2" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonMeat" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -333,7 +335,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Carnes"
 
-[node name="Button3" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonFish" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -341,7 +343,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Pescados"
 
-[node name="Button4" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonPasta" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -349,7 +351,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Pasta"
 
-[node name="Button5" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonDessert" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -357,7 +359,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Postres"
 
-[node name="Button6" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
+[node name="ButtonDrinks" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -423,7 +425,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Borrar"
 
-[node name="Button23" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonAddNotes" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -432,7 +434,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Añadir nota
 "
 
-[node name="Button24" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonTickets" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -440,7 +442,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Tickets"
 
-[node name="Button25" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonOpenBox" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -448,7 +450,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Abrir cajón"
 
-[node name="Button26" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonChangeTable" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -456,7 +458,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cambiar mesa"
 
-[node name="Button27" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonSplitTicket" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -464,7 +466,7 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Dividir ticket"
 
-[node name="Button28" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonPays" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -472,10 +474,27 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Pagos"
 
-[node name="Button29" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
+[node name="ButtonLogout" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cerrar sesión"
+
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonStarters" to="." method="_on_button_starters_pressed"]
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonMeat" to="." method="_on_button_meat_pressed"]
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonFish" to="." method="_on_button_fish_pressed"]
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonPasta" to="." method="_on_button_pasta_pressed"]
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonDessert" to="." method="_on_button_dessert_pressed"]
+[connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonDrinks" to="." method="_on_button_drinks_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonPrint" to="." method="_on_button_print_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonPay" to="." method="_on_button_pay_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonDelete" to="." method="_on_button_delete_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonAddNotes" to="." method="_on_button_add_notes_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonTickets" to="." method="_on_button_tickets_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonOpenBox" to="." method="_on_button_open_box_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonChangeTable" to="." method="_on_button_change_table_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonSplitTicket" to="." method="_on_button_split_ticket_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonPays" to="." method="_on_button_pays_pressed"]
+[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonLogout" to="." method="_on_button_logout_pressed"]
