@@ -4,7 +4,10 @@ extends Node2D
 var productsCard = preload("res://Scenes/productCard.tscn")
 
 func _ready() -> void:
-	pass
+	Globals.calculator.initialize(%CalculatorLabel)
+
+func button_pressed(button:String):
+	Globals.calculator.update(button,%CalculatorLabel)
 
 func getProductsByCategory(category_id: int):
 	for child in productsContainer.get_children():
@@ -83,3 +86,67 @@ func _on_button_pays_pressed() -> void:
 
 func _on_button_logout_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+
+
+func _on_button_num_7_pressed() -> void:
+	button_pressed("7")
+
+
+func _on_button_num_8_pressed() -> void:
+	button_pressed("8")
+
+
+func _on_button_num_9_pressed() -> void:
+	button_pressed("9")
+
+
+func _on_button_c_pressed() -> void:
+	button_pressed("C")
+
+
+func _on_button_num_4_pressed() -> void:
+	button_pressed("4")
+
+
+func _on_button_num_5_pressed() -> void:
+	button_pressed("5")
+
+
+func _on_button_num_6_pressed() -> void:
+	button_pressed("6")
+
+
+func _on_button_symbol_plus_pressed() -> void:
+	button_pressed("+")
+
+
+func _on_button_num_1_pressed() -> void:
+	button_pressed("1")
+
+
+func _on_button_num_2_pressed() -> void:
+	button_pressed("2")
+
+
+func _on_button_num_3_pressed() -> void:
+	button_pressed("3")
+
+
+func _on_button_symbol_minus_pressed() -> void:
+	button_pressed("-")
+
+
+func _on_button_symbol_equal_pressed() -> void:
+	button_pressed("=")
+
+
+func _on_button_num_0_pressed() -> void:
+	button_pressed("0")
+
+
+func _on_button_symbol_decimal_pressed() -> void:
+	button_pressed(",")
+
+
+func _on_button_symbol_percent_pressed() -> void:
+	button_pressed("%")

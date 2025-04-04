@@ -154,13 +154,13 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "9"
 
-[node name="Button" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
+[node name="ButtonC" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
-text = "AC"
+text = "C"
 
 [node name="ButtonNum4" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(80, 40)
@@ -218,7 +218,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "3"
 
-[node name="ButtonSymbol-" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
+[node name="ButtonSymbolMinus" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -226,7 +226,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "-"
 
-[node name="ButtonSymbol=" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
+[node name="ButtonSymbolEqual" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -250,7 +250,7 @@ size_flags_vertical = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = ","
 
-[node name="ButtonSymbol_" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
+[node name="ButtonSymbolPercent" type="Button" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator"]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -273,12 +273,17 @@ size_flags_horizontal = 10
 size_flags_vertical = 3
 columns = 4
 
-[node name="Label" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/SuperiorButton"]
+[node name="CalculatorLabel" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelCalculator/SuperiorButton"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(330, 40)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_j003w")
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="PanelContainerProducts" type="PanelContainer" parent="Control"]
 layout_mode = 0
@@ -478,6 +483,22 @@ size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Cerrar sesión"
 
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum7" to="." method="_on_button_num_7_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum8" to="." method="_on_button_num_8_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum9" to="." method="_on_button_num_9_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonC" to="." method="_on_button_c_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum4" to="." method="_on_button_num_4_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum5" to="." method="_on_button_num_5_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum6" to="." method="_on_button_num_6_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonSymbolPlus" to="." method="_on_button_symbol_plus_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum1" to="." method="_on_button_num_1_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum2" to="." method="_on_button_num_2_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum3" to="." method="_on_button_num_3_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonSymbolMinus" to="." method="_on_button_symbol_minus_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonSymbolEqual" to="." method="_on_button_symbol_equal_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonNum0" to="." method="_on_button_num_0_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonSymbolDecimal" to="." method="_on_button_symbol_decimal_pressed"]
+[connection signal="pressed" from="Control/PanelContainerCalculator/Panel/PanelCalculator/NumSymbolCalculator/ButtonSymbolPercent" to="." method="_on_button_symbol_percent_pressed"]
 [connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonStarters" to="." method="_on_button_starters_pressed"]
 [connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonMeat" to="." method="_on_button_meat_pressed"]
 [connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonFish" to="." method="_on_button_fish_pressed"]

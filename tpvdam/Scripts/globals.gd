@@ -4,6 +4,8 @@ var logged_waiter:Waiter
 
 var selected_table:Table
 
+var calculator:Calculator=Calculator.new()
+
 #Tables functions
 func get_selected_table():
 	return selected_table
