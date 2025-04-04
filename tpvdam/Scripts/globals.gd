@@ -40,6 +40,7 @@ func set_logged_waiter(waiter_id:int):
 	
 func delete_waiter(waiter_id:int):
 	Database.waiters.remove_at(waiter_id-1)
+	Database.update_database()
 
 #Products functions
 func get_product_from_id(product_id:int):
