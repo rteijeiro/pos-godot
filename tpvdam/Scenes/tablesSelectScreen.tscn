@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://cy0elv4y7do1o"]
 
 [ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_ifq2u"]
-[ext_resource type="Script" uid="uid://cdq1ig3qqyrys" path="res://Scripts/tables_select.gd" id="1_v34ye"]
+[ext_resource type="Script" uid="uid://hkpie5rng1e2" path="res://Scripts/tables_select.gd" id="1_v34ye"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_v34ye"]
 [ext_resource type="Texture2D" uid="uid://bdt5vnm2ot01h" path="res://Assets/UI/floorTexture.png" id="4_58udh"]
 [ext_resource type="Texture2D" uid="uid://d0lbbxoqo5moc" path="res://Assets/UI/table.png" id="5_vfktf"]
@@ -104,6 +104,7 @@ offset_right = 341.0
 offset_bottom = 285.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_l20ir")
+text = "1"
 
 [node name="ButtonTable2" type="Button" parent="Panel"]
 layout_mode = 0
@@ -113,6 +114,7 @@ offset_right = 582.0
 offset_bottom = 285.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_ljgb7")
+text = "2"
 
 [node name="ButtonTable3" type="Button" parent="Panel"]
 layout_mode = 0
@@ -122,6 +124,7 @@ offset_right = 350.0
 offset_bottom = 560.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_lb62m")
+text = "3"
 
 [node name="ButtonTable4" type="Button" parent="Panel"]
 layout_mode = 0
@@ -131,6 +134,7 @@ offset_right = 670.0
 offset_bottom = 560.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_cxq16")
+text = "4"
 
 [node name="ButtonTable5" type="Button" parent="Panel"]
 layout_mode = 0
@@ -140,6 +144,7 @@ offset_right = 500.0
 offset_bottom = 790.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_merjw")
+text = "5"
 
 [node name="ButtonTable6" type="Button" parent="Panel"]
 layout_mode = 0
@@ -149,6 +154,7 @@ offset_right = 973.0
 offset_bottom = 626.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_rs1kv")
+text = "6"
 
 [node name="ButtonTable7" type="Button" parent="Panel"]
 layout_mode = 0
@@ -158,6 +164,7 @@ offset_right = 1305.0
 offset_bottom = 627.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_8h08y")
+text = "7"
 
 [node name="ButtonTable8" type="Button" parent="Panel"]
 layout_mode = 0
@@ -167,6 +174,7 @@ offset_right = 973.0
 offset_bottom = 789.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_7din5")
+text = "8"
 
 [node name="ButtonTable9" type="Button" parent="Panel"]
 layout_mode = 0
@@ -176,6 +184,7 @@ offset_right = 1305.0
 offset_bottom = 790.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_my23s")
+text = "9"
 
 [node name="ButtonStool10" type="Button" parent="Panel"]
 layout_mode = 0
@@ -185,6 +194,7 @@ offset_right = 1342.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_60r2a")
+text = "10"
 
 [node name="ButtonStool11" type="Button" parent="Panel"]
 layout_mode = 0
@@ -194,6 +204,7 @@ offset_right = 1278.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_cmihl")
+text = "11"
 
 [node name="ButtonStool12" type="Button" parent="Panel"]
 layout_mode = 0
@@ -203,6 +214,7 @@ offset_right = 1214.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_fsxls")
+text = "12"
 
 [node name="ButtonStool13" type="Button" parent="Panel"]
 layout_mode = 0
@@ -212,6 +224,7 @@ offset_right = 1150.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_5ga0c")
+text = "13"
 
 [node name="ButtonStool14" type="Button" parent="Panel"]
 layout_mode = 0
@@ -221,6 +234,7 @@ offset_right = 1087.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_tw3tp")
+text = "14"
 
 [node name="ButtonStool15" type="Button" parent="Panel"]
 layout_mode = 0
@@ -230,6 +244,7 @@ offset_right = 1022.0
 offset_bottom = 292.0
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_0slgy")
+text = "15"
 
 [node name="ButtonStool16" type="Button" parent="Panel"]
 layout_mode = 0
@@ -240,6 +255,7 @@ offset_bottom = 211.0
 rotation = 1.5708
 scale = Vector2(1.06995, 0.934041)
 theme_override_styles/normal = SubResource("StyleBoxTexture_65heh")
+text = "16"
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 layout_mode = 0

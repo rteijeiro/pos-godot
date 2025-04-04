@@ -39,8 +39,7 @@ func set_logged_waiter(waiter_id:int):
 	logged_waiter = null
 	
 func delete_waiter(waiter_id:int):
-	Database.waiters.remove_at(waiter_id-1)
-	Database.update_database()
+	Database.remove(Waiter,waiter_id)
 
 #Products functions
 func get_product_from_id(product_id:int):

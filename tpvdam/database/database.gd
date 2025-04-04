@@ -65,3 +65,28 @@ func add(element):
 		element.id = payments.back().id+1
 		payments.append(element)
 	update_database()
+
+func remove(type,element_id:int) -> bool:
+	if type==Waiter:
+		return _remove_database_array_element_by_id(waiters,element_id)
+	elif type==Table:
+		return _remove_database_array_element_by_id(tables,element_id)
+	elif type==Product:
+		return _remove_database_array_element_by_id(products,element_id)
+	elif type==Payment:
+		return _remove_database_array_element_by_id(payments,element_id)
+	else:
+		return false
+
+func _remove_database_array_element_by_id(array:Array,id:int) -> bool:
+	var index:=-1
+	for i in array.size():
+		if array[i].id==id:
+			index=i
+			break
+	if index!=-1:
+		array.remove_at(index)
+		update_database()
+		return true
+	else:
+		return false
