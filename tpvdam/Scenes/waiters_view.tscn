@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://Assets/UI/ButtonActiveRounded.png" id="4_awm0d"]
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="5_8ab16"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aefrw"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f0sqj"]
 texture = ExtResource("4_awm0d")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cyisg"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yyq2r"]
 texture = ExtResource("5_8ab16")
 
 [node name="WaitersView" type="Control"]
@@ -72,19 +72,40 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 3
 
-[node name="AddButton" type="Button" parent="."]
+[node name="HBoxContainerButtons" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.494
-anchor_top = 0.905
-anchor_right = 0.534
-anchor_bottom = 0.946
-offset_left = -0.620056
-offset_top = 0.304993
-offset_right = -0.820068
-offset_bottom = -0.374023
+anchor_left = 0.33
+anchor_top = 0.916
+anchor_right = 0.708
+anchor_bottom = 0.961
+offset_left = 0.0999756
+offset_top = 4.19592
+offset_right = -0.839966
+offset_bottom = -0.158997
+theme_override_constants/separation = 80
+alignment = 1
+
+[node name="SelectButton" type="Button" parent="HBoxContainerButtons"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("3_ysa8t")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/pressed = SubResource("StyleBoxTexture_aefrw")
-theme_override_styles/normal = SubResource("StyleBoxTexture_cyisg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f0sqj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yyq2r")
+text = "Select "
+
+[node name="AddButton" type="Button" parent="HBoxContainerButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ysa8t")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f0sqj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yyq2r")
 text = "Add "
+
+[node name="DeleteButton" type="Button" parent="HBoxContainerButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ysa8t")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f0sqj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yyq2r")
+text = "Delete "

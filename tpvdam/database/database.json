@@ -59,6 +59,18 @@
 			"name": "Pepe",
 			"surname": "Montero",
 			"image": "res://icon.svg"
+		},
+		{
+			"id": 11,
+			"name": "Marta",
+			"surname": "Palacios",
+			"image": "res://icon.svg"
+		},
+		{
+			"id": 12,
+			"name": "rer",
+			"surname": "qweq",
+			"image": "res://icon.svg"
 		}
 	],
 	"tables": [
