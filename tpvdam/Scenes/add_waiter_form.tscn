@@ -1,11 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://cvbef8glgtoe"]
+[gd_scene load_steps=10 format=3 uid="uid://cvbef8glgtoe"]
 
 [ext_resource type="Script" uid="uid://bc2c0e3rtnkqw" path="res://Scripts/add_waiter_form.gd" id="1_3l3l3"]
 [ext_resource type="Texture2D" uid="uid://bnv11uj1ivdbi" path="res://Assets/UI/InnerPanel.png" id="1_o6oae"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="2_1e8rt"]
 [ext_resource type="Texture2D" uid="uid://c5cvt3b1w4qj6" path="res://Assets/UI/ButtonActiveRounded.png" id="3_tkv2v"]
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="4_f3ook"]
-[ext_resource type="Texture2D" uid="uid://g5shjraiysfo" path="res://Assets/UI/RedDot.png" id="5_f3ook"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3l3l3"]
 texture = ExtResource("3_tkv2v")
@@ -18,15 +17,6 @@ texture = ExtResource("3_tkv2v")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f3ook"]
 texture = ExtResource("4_f3ook")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_437kt"]
-texture = ExtResource("5_f3ook")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_22yom"]
-texture = ExtResource("5_f3ook")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kpsr5"]
-texture = ExtResource("5_f3ook")
 
 [node name="AddWaiterForm" type="Control"]
 layout_mode = 3
@@ -128,18 +118,3 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/pressed = SubResource("StyleBoxTexture_tkv2v")
 theme_override_styles/normal = SubResource("StyleBoxTexture_f3ook")
 text = "Add "
-
-[node name="BackButton" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.008
-anchor_top = 0.012
-anchor_right = 0.029
-anchor_bottom = 0.047
-offset_left = 0.2
-offset_top = 0.2
-offset_right = -0.400002
-offset_bottom = -0.300003
-theme_override_styles/hover = SubResource("StyleBoxTexture_437kt")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_22yom")
-theme_override_styles/normal = SubResource("StyleBoxTexture_kpsr5")

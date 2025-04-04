@@ -37,7 +37,11 @@ func _on_add_waiter_pressed():
 	form.popup_centered()
 
 func _on_new_waiter_added(waiter_name, waiter_surname):
+	var new_waiter = Waiter.new(waiter_name, waiter_surname, "res://icon.svg")
+	
 	var database = get_node("/root/Database")
+	database.add(new_waiter)
+	
 	_refresh_waiters()
 	
 	await get_tree().process_frame

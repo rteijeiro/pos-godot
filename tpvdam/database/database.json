@@ -41,6 +41,24 @@
 			"name": "Álvaro",
 			"surname": "Pérez",
 			"image": "res://icon.svg"
+		},
+		{
+			"id": 8,
+			"name": "Alberto",
+			"surname": "Moreno",
+			"image": "res://icon.svg"
+		},
+		{
+			"id": 9,
+			"name": "Jose",
+			"surname": "Fuentes",
+			"image": "res://icon.svg"
+		},
+		{
+			"id": 10,
+			"name": "Pepe",
+			"surname": "Montero",
+			"image": "res://icon.svg"
 		}
 	],
 	"tables": [
