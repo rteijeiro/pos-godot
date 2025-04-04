@@ -1,28 +1,47 @@
 extends Node2D
 
-# ---------- FTypes of food ----------
-func _on_button_starters_pressed() -> void:
-	pass # Replace with function body.
+@onready var productsContainer = $Control/PanelContainerProductsList/Panel/ScrollContainer/productsContainer
+var productsCard = preload("res://Scenes/productCard.tscn")
 
+func _ready() -> void:
+	pass
+
+func getProductsByCategory(category_id: int):
+	for child in productsContainer.get_children():
+		child.queue_free()
+		
+	for product in Globals.get_products_of_category(category_id):
+		var card = productsCard.instantiate()
+		productsContainer.add_child(card)
+
+		card.set_data({
+			"name": product.name,
+			"image": product.image if product.image else "res://icon.svg"
+		})
+
+# ---------- Types of food ----------
+func _on_button_starters_pressed() -> void:
+	getProductsByCategory(Product.categories.STARTERS)
+	
 
 func _on_button_meat_pressed() -> void:
-	pass # Replace with function body.
+	getProductsByCategory(Product.categories.MEAT)
 
 
 func _on_button_fish_pressed() -> void:
-	pass # Replace with function body.
+	getProductsByCategory(Product.categories.FISH)
 
 
 func _on_button_pasta_pressed() -> void:
-	pass # Replace with function body.
+	getProductsByCategory(Product.categories.PASTA)
 
 
 func _on_button_dessert_pressed() -> void:
-	pass # Replace with function body.
+	getProductsByCategory(Product.categories.DESSERTS)
 
 
 func _on_button_drinks_pressed() -> void:
-	pass # Replace with function body.
+	getProductsByCategory(Product.categories.DRINKS)
 
 
 # ---------- Others buttons ----------
