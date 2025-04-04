@@ -366,6 +366,17 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_ufpyl")
 
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/PanelContainerProductsList/Panel"]
+layout_mode = 0
+offset_right = 806.0
+offset_bottom = 771.0
+
+[node name="productsContainer" type="GridContainer" parent="Control/PanelContainerProductsList/Panel/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 3
+
 [node name="PanelContainerOthersButtons" type="PanelContainer" parent="Control"]
 layout_mode = 0
 offset_top = 810.0
