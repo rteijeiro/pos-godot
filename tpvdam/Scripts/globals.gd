@@ -43,7 +43,7 @@ func get_selected_table_products_with_quantities()->Array:
 				found=true
 				break
 		if not found:
-			products_with_quantities.append(get_product_from_id(product_id))
+			products_with_quantities.append(ProductWithQuantity.new(get_product_from_id(product_id)))
 	return products_with_quantities
 
 #Waiters functions
