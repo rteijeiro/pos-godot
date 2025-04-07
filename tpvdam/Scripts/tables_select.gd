@@ -1,5 +1,17 @@
 extends Node2D
 
+@onready var logged_waiter_label = $Panel/LoggedWaiterLabel
+
+func _ready():
+	var backend = get_node("/root/Globals")
+	var waiter = backend.get_logged_waiter()
+	
+	if waiter != null:
+		logged_waiter_label.text = "Profile: " + waiter.name + " " + waiter.surname
+	else:
+		logged_waiter_label.text = "Ningún camarero logueado"
+
+
 func go_to_table(id:int):
 	Globals.set_selected_table(id)
 	get_tree().change_scene_to_file("res://Scenes/productsScreen.tscn")

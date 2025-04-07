@@ -80,6 +80,21 @@ theme_override_font_sizes/font_size = 40
 text = "Selección de mesas:"
 vertical_alignment = 1
 
+[node name="LoggedWaiterLabel" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.598
+anchor_top = 0.05
+anchor_right = 0.984
+anchor_bottom = 0.102
+offset_left = -0.398071
+offset_top = -1.05
+offset_right = -4.38403
+offset_bottom = 0.0979919
+theme_override_fonts/font = ExtResource("2_v34ye")
+theme_override_font_sizes/font_size = 40
+vertical_alignment = 1
+
 [node name="GridContainer" type="GridContainer" parent="Panel"]
 layout_mode = 0
 offset_left = 128.0
