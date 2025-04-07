@@ -1,10 +1,13 @@
 extends Node2D
 
+@onready var gridProducts = $Control/PanelContainerCalculator/Panel/PanelProductos/ScrollContainer/GridContainer
 @onready var productsContainer = $Control/PanelContainerProductsList/Panel/ScrollContainer/productsContainer
-var productsCard = preload("res://Scenes/productCard.tscn")
 
+var productsCard = preload("res://Scenes/productCard.tscn")
+var productName = preload("res://Scenes/ProductName.tscn")
 func _ready() -> void:
 	Globals.calculator.initialize(%CalculatorLabel)
+	updateProductsWithQuantities()
 
 func button_pressed(button:String):
 	Globals.calculator.update(button,%CalculatorLabel)
@@ -18,9 +21,20 @@ func getProductsByCategory(category_id: int):
 		productsContainer.add_child(card)
 
 		card.set_data({
+			"id": product.id,
 			"name": product.name,
 			"image": product.image if product.image else "res://icon.svg"
 		})
+
+func updateProductsWithQuantities():
+	for child in gridProducts.get_children():
+		child.queue_free()
+		
+	var products = Globals.get_selected_table_products_with_quantities()
+	for product in products:
+		var label = productName.instantiate()
+		gridProducts.add_child(label)
+		label.set_data(product)
 
 # ---------- Types of food ----------
 func _on_button_starters_pressed() -> void:

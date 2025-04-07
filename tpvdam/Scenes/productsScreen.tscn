@@ -101,17 +101,16 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_sagky")
 text = "Lista de productos:"
 
-[node name="Label2" type="Label" parent="Control/PanelContainerCalculator/Panel/PanelProductos"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.067
-anchor_right = 1.0
-anchor_bottom = 0.983
-offset_left = 8.0
-offset_top = -0.16
-offset_right = -8.0
-offset_bottom = 0.159973
-grow_horizontal = 2
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/PanelContainerCalculator/Panel/PanelProductos"]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 405.0
+offset_bottom = 469.0
+
+[node name="GridContainer" type="GridContainer" parent="Control/PanelContainerCalculator/Panel/PanelProductos/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="PanelCalculator" type="Panel" parent="Control/PanelContainerCalculator/Panel"]
 layout_mode = 0

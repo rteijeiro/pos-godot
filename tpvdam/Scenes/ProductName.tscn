@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://drfkw7ipicfv"]
+
+[ext_resource type="Script" uid="uid://b2ey6sh84ua1v" path="res://Scripts/product_name.gd" id="1_u4bro"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_u4bro")
+
+[node name="NameProduct" type="Label" parent="."]
+offset_right = 150.0
+offset_bottom = 31.0
+
+[node name="AmountProduct" type="Label" parent="."]
+offset_left = 150.0
+offset_right = 250.0
+offset_bottom = 31.0
+
+[node name="priceProduct" type="Label" parent="."]
+offset_left = 246.0
+offset_right = 299.0
+offset_bottom = 31.0
+
+[node name="ButtonDelete" type="Button" parent="."]
+offset_left = 300.0
+offset_right = 359.0
+offset_bottom = 31.0
+text = "Delete"
