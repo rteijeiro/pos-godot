@@ -23,15 +23,18 @@ var status:int=statuses.PENDING
 func _init(p_timestamp=null, p_amount:float=0.0, 
 	p_paymentMethod:int=paymentMethods.CASH, p_status:int=statuses.PENDING):
 	id = 0
-	timestamp = p_timestamp if p_timestamp != null else Time.get_datetime_dict_from_system()
+	timestamp = p_timestamp if p_timestamp != null else Time.get_unix_time_from_system()
 	amount = p_amount
 	paymentMethod = p_paymentMethod
 	status = p_status
 
 func from_json(json):
 	id=int(json["id"])
-	timestamp=Time.get_datetime_dict_from_datetime_string(json["timestamp"],false)
-	amount=float(json["amount"])
+	if typeof(json["timestamp"]) == TYPE_STRING:
+		timestamp = Time.get_unix_time_from_datetime_string(json["timestamp"])
+	else:
+		timestamp = int(json["timestamp"])
+	amount=int(json["amount"])
 	paymentMethod=paymentMethod_map[json["paymentMethod"]]
 	status=status_map[json["status"]]
 
@@ -49,11 +52,9 @@ func to_json() -> Dictionary:
 			status_str = key
 			break
 
-	var timestamp_str = Time.get_datetime_string_from_datetime_dict(timestamp, false)
-	
 	return {
 		"id": id,
-		"timestamp": timestamp_str,
+		"timestamp": timestamp,
 		"amount": amount,
 		"paymentMethod": payment_method_str,
 		"status": status_str

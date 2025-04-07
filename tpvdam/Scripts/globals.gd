@@ -59,6 +59,12 @@ func get_selected_table_products_with_quantities()->Array:
 		if not found:
 			products_with_quantities.append(ProductWithQuantity.new(get_product_from_id(product_id)))
 	return products_with_quantities
+	
+func find_table_by_id(table_id:int):
+	for table:Table in Database.tables:
+		if(table.id == table_id):
+			return table
+	return null
 
 #Waiters functions
 func get_logged_waiter():
@@ -90,3 +96,10 @@ func get_products_of_category(category:int):
 		if product.category==category:
 			products.append(product)
 	return products
+	
+#Payments functions
+func pay(payment_method:int, status:int):
+	var timestamp = Time.get_unix_time_from_system()
+	var payment = Payment.new(timestamp, calculator.get_current_value(), payment_method, status)
+	Database.add(payment)
+	return
