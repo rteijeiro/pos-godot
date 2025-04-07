@@ -4,6 +4,8 @@ extends Control
 @onready var add_waiter_button = $HBoxContainerButtons/AddButton
 @onready var select_button = $HBoxContainerButtons/SelectButton
 @onready var delete_button = $HBoxContainerButtons/DeleteButton
+@onready var selected_waiter_label = $SelectedWaiterLabel
+
 
 var waiter_card_scene = preload("res://Scenes/waiter_card.tscn")
 var add_waiter_form_scene = preload("res://Scenes/add_waiter_form.tscn")
@@ -29,20 +31,32 @@ func _refresh_waiters():
 func _add_waiter_card(waiter_data):
 	var card = waiter_card_scene.instantiate()
 	waiters_container.add_child(card)
-	
+
 	card.set_data({
 		"name": waiter_data.name,
 		"surname": waiter_data.surname,
 		"image": waiter_data.image if waiter_data.image else "res://icon.svg",
 		"selected": (waiter_data.id == selected_waiter_id)
 	})
-	
+
 	card.pressed.connect(_on_waiter_selected.bind(waiter_data.id))
+
 
 func _on_waiter_selected(waiter_id):
 	selected_waiter_id = waiter_id
+
+	var database = get_node("/root/Database")
+	var selected_waiter = database.waiters.filter(func(w): return w.id == waiter_id)
+
+	if selected_waiter.size() > 0:
+		selected_waiter_label.text = selected_waiter[0].name + " " + selected_waiter[0].surname
+	else:
+		selected_waiter_label.text = ""
+
 	_refresh_waiters()
 	_update_buttons_state()
+
+
 
 func _update_buttons_state():
 	select_button.disabled = selected_waiter_id == -1
