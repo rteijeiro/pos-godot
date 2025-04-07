@@ -6,19 +6,22 @@ var selected_table:Table=null
 
 var calculator:Calculator=Calculator.new()
 
-func _check_table_selected():
-	assert(selected_table,"No table selected")
+func _is_table_selected() -> bool:
+	if(selected_table==null):
+		print("La mesa no está seleccionada")
+		return false
+	return true
 
 #Tables functions
 func get_selected_table():
-	_check_table_selected()
+	if(!_is_table_selected()): return
 	return selected_table
 
 func set_selected_table(table_id:int):
 	selected_table = Database.tables[table_id-1]
 
 func add_product_to_selected_table(product_id:int):
-	_check_table_selected()
+	if(!_is_table_selected()): return
 	selected_table.products.append(product_id)
 	selected_table.status=Table.statuses.OCCUPIED
 
@@ -26,14 +29,14 @@ func clear_selected_table():
 	selected_table = null
 
 func get_selected_table_amount() -> float:
-	_check_table_selected()
+	if(!_is_table_selected()): return 0
 	var sum:=0.0
 	for product_id in selected_table.products:
 		sum+=get_product_from_id(product_id).price
 	return sum
 
 func get_selected_table_products_with_quantities()->Array:
-	_check_table_selected()
+	if(!_is_table_selected()): return []
 	var products_with_quantities:=[]
 	for product_id in selected_table.products:
 		var found:=false
