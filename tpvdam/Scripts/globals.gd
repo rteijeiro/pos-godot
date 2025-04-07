@@ -6,6 +6,11 @@ var selected_table:Table=null
 
 var calculator:Calculator=Calculator.new()
 
+var var_table_products_changed:=false
+
+func _set_table_products_change():
+	var_table_products_changed=true
+
 func _is_table_selected() -> bool:
 	if(selected_table==null):
 		print("La mesa no está seleccionada")
@@ -13,6 +18,11 @@ func _is_table_selected() -> bool:
 	return true
 
 #Tables functions
+func fetch_table_products_changed():
+	var changed=var_table_products_changed
+	var_table_products_changed=false
+	return changed
+
 func get_selected_table():
 	if(!_is_table_selected()): return
 	return selected_table
@@ -24,6 +34,7 @@ func add_product_to_selected_table(product_id:int):
 	if(!_is_table_selected()): return
 	selected_table.products.append(product_id)
 	selected_table.status=Table.statuses.OCCUPIED
+	_set_table_products_change()
 
 func clear_selected_table():
 	selected_table = null

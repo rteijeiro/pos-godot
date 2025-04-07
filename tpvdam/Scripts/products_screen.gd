@@ -6,8 +6,11 @@ extends Node2D
 var productsCard = preload("res://Scenes/productCard.tscn")
 var productName = preload("res://Scenes/ProductName.tscn")
 func _ready() -> void:
-	Globals.calculator.initialize(%CalculatorLabel)
-	updateProductsWithQuantities()
+	updateProductsWithQuantitiesAndCalculator()
+
+func _process(_delta: float) -> void:
+	if Globals.fetch_table_products_changed():
+		updateProductsWithQuantitiesAndCalculator()
 
 func button_pressed(button:String):
 	Globals.calculator.update(button,%CalculatorLabel)
@@ -26,7 +29,9 @@ func getProductsByCategory(category_id: int):
 			"image": product.image if product.image else "res://icon.svg"
 		})
 
-func updateProductsWithQuantities():
+func updateProductsWithQuantitiesAndCalculator():
+	Globals.calculator.initialize(%CalculatorLabel)
+	
 	for child in gridProducts.get_children():
 		child.queue_free()
 		
