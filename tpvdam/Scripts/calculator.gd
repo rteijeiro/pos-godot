@@ -11,6 +11,12 @@ func initialize(contentLabel:Label):
 	text=str(Globals.get_selected_table_amount())
 	contentLabel.text=text
 
+func get_current_value()->float:
+	if writing_secondary_number:
+		return base_number
+	else:
+		return float(text)
+
 func _compute_result():
 	if writing_secondary_number:
 		var result:=base_number
