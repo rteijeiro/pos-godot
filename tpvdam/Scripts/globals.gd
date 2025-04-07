@@ -1,19 +1,24 @@
 extends Node
 
-var logged_waiter:Waiter
+var logged_waiter:Waiter=null
 
-var selected_table:Table
+var selected_table:Table=null
 
 var calculator:Calculator=Calculator.new()
 
+func _check_table_selected():
+	assert(selected_table,"No table selected")
+
 #Tables functions
 func get_selected_table():
+	_check_table_selected()
 	return selected_table
 
 func set_selected_table(table_id:int):
 	selected_table = Database.tables[table_id-1]
 
 func add_product_to_selected_table(product_id:int):
+	_check_table_selected()
 	selected_table.products.append(product_id)
 	selected_table.status=Table.statuses.OCCUPIED
 
@@ -21,10 +26,25 @@ func clear_selected_table():
 	selected_table = null
 
 func get_selected_table_amount() -> float:
+	_check_table_selected()
 	var sum:=0.0
 	for product_id in selected_table.products:
 		sum+=get_product_from_id(product_id).price
 	return sum
+
+func get_selected_table_products_with_quantities()->Array:
+	_check_table_selected()
+	var products_with_quantities:=[]
+	for product_id in selected_table.products:
+		var found:=false
+		for p in products_with_quantities:
+			if p.product.id==product_id:
+				p.add()
+				found=true
+				break
+		if not found:
+			products_with_quantities.append(get_product_from_id(product_id))
+	return products_with_quantities
 
 #Waiters functions
 func get_logged_waiter():
