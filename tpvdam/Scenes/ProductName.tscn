@@ -10,21 +10,27 @@ offset_bottom = 50.0
 script = ExtResource("1_u4bro")
 
 [node name="NameProduct" type="Label" parent="."]
+layout_mode = 0
 offset_right = 192.0
 offset_bottom = 31.0
 
 [node name="AmountProduct" type="Label" parent="."]
+layout_mode = 0
 offset_left = 202.0
 offset_right = 250.0
 offset_bottom = 31.0
 
 [node name="priceProduct" type="Label" parent="."]
+layout_mode = 0
 offset_left = 246.0
 offset_right = 299.0
 offset_bottom = 31.0
 
 [node name="ButtonDelete" type="Button" parent="."]
+layout_mode = 0
 offset_left = 300.0
 offset_right = 359.0
 offset_bottom = 31.0
 text = "Delete"
+
+[connection signal="pressed" from="ButtonDelete" to="." method="_on_button_delete_pressed"]

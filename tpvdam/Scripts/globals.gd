@@ -36,6 +36,18 @@ func add_product_to_selected_table(product_id:int):
 	selected_table.status=Table.statuses.OCCUPIED
 	_set_table_products_change()
 
+func remove_product_from_selected_table(product_id:int):
+	if(!_is_table_selected()): return
+	var index:=-1
+	for i in selected_table.products.size():
+		var j=selected_table.products.size()-1-i
+		if selected_table.products[j]==product_id:
+			index=j
+			break
+	if index!=-1:
+		selected_table.products.remove_at(index)
+		_set_table_products_change()
+
 func clear_selected_table():
 	selected_table = null
 

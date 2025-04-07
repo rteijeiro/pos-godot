@@ -8,3 +8,7 @@ func set_data(data: ProductWithQuantity):
 	$AmountProduct.text = str(data.quantity)
 	$priceProduct.text = str(data.product.price)
 	
+
+
+func _on_button_delete_pressed() -> void:
+	Globals.remove_product_from_selected_table(product_id)
