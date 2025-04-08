@@ -62,25 +62,7 @@ func _is_digit(c:String):
 
 func update(button:String,contentLabel:Label):
 	match button:
-		"0":
-			_write(button)
-		"1":
-			_write(button)
-		"2":
-			_write(button)
-		"3":
-			_write(button)
-		"4":
-			_write(button)
-		"5":
-			_write(button)
-		"6":
-			_write(button)
-		"7":
-			_write(button)
-		"8":
-			_write(button)
-		"9":
+		"0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
 			_write(button)
 		",":
 			if text.length()>0 and text.find(".")==-1:
