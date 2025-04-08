@@ -330,49 +330,49 @@
 		{
 			"id": 24,
 			"name": "Flan de Huevo",
-			"image": "dessert_4.png",
+			"image": "res://Assets/Products/flan-de-huevo.png",
 			"price": 3.75,
 			"category": "DESSERTS"
 		},
 		{
 			"id": 25,
 			"name": "Arroz con Leche",
-			"image": "dessert_5.png",
+			"image": "res://Assets/Products/arroz-con-leche.png",
 			"price": 4.25,
 			"category": "DESSERTS"
 		},
 		{
 			"id": 26,
 			"name": "Sangría",
-			"image": "drink_1.png",
+			"image": "res://Assets/Products/sangria.png",
 			"price": 6.99,
 			"category": "DRINKS"
 		},
 		{
 			"id": 27,
 			"name": "Cerveza Estrella",
-			"image": "drink_2.png",
+			"image": "res://Assets/Products/cerveza.png",
 			"price": 3.5,
 			"category": "DRINKS"
 		},
 		{
 			"id": 28,
 			"name": "Tinto de Verano",
-			"image": "drink_3.png",
+			"image": "res://Assets/Products/tinto-de-verano.png",
 			"price": 4.0,
 			"category": "DRINKS"
 		},
 		{
 			"id": 29,
 			"name": "Agua Mineral",
-			"image": "drink_4.png",
+			"image": "res://Assets/Products/botella-de-agua.png",
 			"price": 2.0,
 			"category": "DRINKS"
 		},
 		{
 			"id": 30,
 			"name": "Vino Tinto",
-			"image": "drink_5.png",
+			"image": "res://Assets/Products/vino-tinto.png",
 			"price": 5.0,
 			"category": "DRINKS"
 		}
