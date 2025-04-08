@@ -1,10 +1,11 @@
 class_name Payment
 extends Object
 
-enum paymentMethods { CASH, CARD }
+enum paymentMethods { CASH, CARD, NONE }
 const paymentMethod_map:={
 	"CASH": paymentMethods.CASH,
-	"CARD": paymentMethods.CARD
+	"CARD": paymentMethods.CARD,
+	"NONE": paymentMethods.NONE
 }
 
 enum statuses { PENDING, COMPLETED, CANCELLED }
