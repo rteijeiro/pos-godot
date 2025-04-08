@@ -11,6 +11,7 @@ anchor_right = 0.187
 anchor_bottom = 0.333
 offset_right = -291.2
 offset_bottom = -291.7
+expand_icon = true
 script = ExtResource("1_df0et")
 
 [node name="SelectionIndicator" type="ColorRect" parent="."]
@@ -33,6 +34,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource("1_1r2pp")
+expand_mode = 1
 stretch_mode = 5
 
 [node name="WaiterName" type="Label" parent="HBoxContainer"]
