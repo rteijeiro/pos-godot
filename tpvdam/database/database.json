@@ -197,70 +197,70 @@
 		{
 			"id": 5,
 			"name": "Ensalada Mixta",
-			"image": "starter_5.png",
+			"image": "res://Assets/Icons/ensalada-de-frutas.png",
 			"price": 4.5,
 			"category": "STARTERS"
 		},
 		{
 			"id": 6,
 			"name": "Rabo de Toro",
-			"image": "meat_1.png",
+			"image": "res://Assets/Icons/carne.png",
 			"price": 15.99,
 			"category": "MEAT"
 		},
 		{
 			"id": 7,
 			"name": "Cochinillo Asado",
-			"image": "meat_2.png",
+			"image": "res://Assets/Icons/parilla.png",
 			"price": 18.5,
 			"category": "MEAT"
 		},
 		{
 			"id": 8,
 			"name": "Chuletas de Cordero",
-			"image": "meat_3.png",
+			"image": "res://Assets/Icons/chuleta-de-cerdo.png",
 			"price": 16.75,
 			"category": "MEAT"
 		},
 		{
 			"id": 9,
 			"name": "Solomillo a la Plancha",
-			"image": "meat_4.png",
+			"image": "res://Assets/Icons/ternera.png",
 			"price": 17.99,
 			"category": "MEAT"
 		},
 		{
 			"id": 10,
 			"name": "Carne a la Parrilla",
-			"image": "meat_5.png",
+			"image": "res://Assets/Icons/parrilla2.png",
 			"price": 14.5,
 			"category": "MEAT"
 		},
 		{
 			"id": 11,
 			"name": "Merluza a la Romana",
-			"image": "fish_1.png",
+			"image": "res://Assets/Icons/merluza-blanca.png",
 			"price": 13.5,
 			"category": "FISH"
 		},
 		{
 			"id": 12,
 			"name": "Calamares a la Romana",
-			"image": "fish_2.png",
+			"image": "res://Assets/Icons/calamares.png",
 			"price": 12.75,
 			"category": "FISH"
 		},
 		{
 			"id": 13,
 			"name": "Dorada al Horno",
-			"image": "fish_3.png",
+			"image": "res://Assets/Icons/pez-dorado.png",
 			"price": 16.5,
 			"category": "FISH"
 		},
 		{
 			"id": 14,
 			"name": "Sardinas a la Plancha",
-			"image": "fish_4.png",
+			"image": "res://Assets/Icons/sardinas-enlatadas.png",
 			"price": 11.0,
 			"category": "FISH"
 		},
