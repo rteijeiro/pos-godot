@@ -653,44 +653,107 @@
 		},
 		{
 			"id": 40,
-			"timestamp": 1744106170.417,
-			"amount": 33.98,
+			"timestamp": 1744106170,
+			"amount": 33.0,
 			"paymentMethod": "CASH",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 41,
-			"timestamp": 1744106173.767,
-			"amount": 15.99,
+			"timestamp": 1744106173,
+			"amount": 15.0,
 			"paymentMethod": "CASH",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 42,
-			"timestamp": 1744106176.217,
-			"amount": 15.99,
+			"timestamp": 1744106176,
+			"amount": 15.0,
 			"paymentMethod": "CARD",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 43,
-			"timestamp": 1744106377.541,
-			"amount": 15.99,
+			"timestamp": 1744106377,
+			"amount": 15.0,
 			"paymentMethod": "CASH",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 44,
-			"timestamp": 1744106378.176,
-			"amount": 15.99,
+			"timestamp": 1744106378,
+			"amount": 15.0,
 			"paymentMethod": "CARD",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 45,
-			"timestamp": 1744106387.726,
-			"amount": 15.99,
+			"timestamp": 1744106387,
+			"amount": 15.0,
 			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 46,
+			"timestamp": 1744106645,
+			"amount": 84.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 47,
+			"timestamp": 1744106648,
+			"amount": 84.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 48,
+			"timestamp": 1744106659,
+			"amount": 84.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 49,
+			"timestamp": 1744106685,
+			"amount": 84.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 50,
+			"timestamp": 1744107769,
+			"amount": 13.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 51,
+			"timestamp": 1744108036,
+			"amount": 37.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 52,
+			"timestamp": 1744108061,
+			"amount": 131.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 53,
+			"timestamp": 1744108094,
+			"amount": 63.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 54,
+			"timestamp": 1744109218.641,
+			"amount": 80.99,
+			"paymentMethod": "NONE",
 			"status": "COMPLETED"
 		}
 	]

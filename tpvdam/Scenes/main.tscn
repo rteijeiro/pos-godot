@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dnwaf6smi8ml6"]
+[gd_scene load_steps=10 format=3 uid="uid://dnwaf6smi8ml6"]
 
 [ext_resource type="Script" uid="uid://hbt0ajko3t7t" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://c0d5qc1ol32pq" path="res://Assets/UI/Panel.png" id="2_8gbba"]
@@ -10,6 +10,12 @@
 texture = ExtResource("4_kry3j")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kry3j"]
+texture = ExtResource("5_21xkr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_21xkr"]
+texture = ExtResource("4_kry3j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_344ge"]
 texture = ExtResource("5_21xkr")
 
 [node name="accessScreen" type="Node2D"]
@@ -33,9 +39,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -75.0
+offset_left = -85.0
 offset_top = 128.0
-offset_right = 72.0
+offset_right = 82.0
 offset_bottom = 184.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -64,4 +70,25 @@ theme_override_font_sizes/font_size = 40
 text = "TPV DAM"
 horizontal_alignment = 1
 
+[node name="ExitButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = 210.0
+offset_right = 61.0
+offset_bottom = 269.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_8gbba")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/pressed = SubResource("StyleBoxTexture_21xkr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_344ge")
+text = "Exit"
+icon_alignment = 1
+
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/ExitButton" to="." method="_on_exit_button_pressed"]

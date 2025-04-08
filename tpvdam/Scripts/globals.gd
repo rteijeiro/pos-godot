@@ -23,6 +23,9 @@ func fetch_table_products_changed():
 	var_table_products_changed=false
 	return changed
 
+func exit_selected_table():
+	selected_table=null
+
 func get_selected_table():
 	if(!_is_table_selected()): return
 	return selected_table
@@ -36,6 +39,12 @@ func add_product_to_selected_table(product_id:int):
 	selected_table.status=Table.statuses.OCCUPIED
 	_set_table_products_change()
 
+func clear_selected_table_products():
+	if(!_is_table_selected()): return
+	if selected_table.products.size()>0:
+		selected_table.products.clear()
+		_set_table_products_change()
+
 func remove_product_from_selected_table(product_id:int):
 	if(!_is_table_selected()): return
 	var index:=-1
@@ -47,9 +56,6 @@ func remove_product_from_selected_table(product_id:int):
 	if index!=-1:
 		selected_table.products.remove_at(index)
 		_set_table_products_change()
-
-func clear_selected_table():
-	selected_table = null
 
 func get_selected_table_amount() -> float:
 	if(!_is_table_selected()): return 0
@@ -91,7 +97,10 @@ func set_logged_waiter(waiter_id:int):
 			logged_waiter = waiter
 			return
 	logged_waiter = null
-	
+
+func waiter_logout():
+	logged_waiter=null
+
 func delete_waiter(waiter_id:int):
 	Database.remove(Waiter,waiter_id)
 

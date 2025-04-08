@@ -17,26 +17,26 @@ func load_selected_products():
 		var label = productName.instantiate()
 		grid_products.add_child(label)
 		label.set_data(product)
-		
-		label.get_node("ButtonDelete").connect("pressed", Callable(self, "_on_product_deleted").bind(product.product.id))
 
-func _on_product_deleted(product_id):
-	Globals.remove_product_from_selected_table(product_id)
-	load_selected_products()
-	Globals.calculator.initialize(calculator_label)
+func _process(_delta: float) -> void:
+	if Globals.fetch_table_products_changed():
+		Globals.calculator.initialize(calculator_label)
+		load_selected_products()
 	
 func _on_button_cash_pressed():
-	Globals.calculator.initialize(calculator_label)
+	Globals.clear_selected_table_products()
 	Globals.pay(Payment.paymentMethods.CASH, Payment.statuses.COMPLETED)
 	show_payment_message("Pago realizado correctamente: %.2f€" % Globals.calculator.get_current_value(), true)
 
 func _on_button_card_pressed():
-	Globals.calculator.initialize(calculator_label)
+	Globals.clear_selected_table_products()
 	Globals.pay(Payment.paymentMethods.CARD, Payment.statuses.COMPLETED)
 	show_payment_message("Pago realizado correctamente: %.2f€" % Globals.calculator.get_current_value(), true)
 
 
 func _on_button_not_paid_pressed():
+	Globals.clear_selected_table_products()
+	Globals.pay(Payment.paymentMethods.NONE, Payment.statuses.COMPLETED)
 	show_payment_message("No se ha detectado ningún pago", false)
 
 func show_payment_message(message: String, success: bool):
@@ -57,3 +57,83 @@ func show_payment_message(message: String, success: bool):
 
 	await get_tree().create_timer(2.0).timeout
 	label.queue_free()
+	
+	Globals.exit_selected_table()
+	get_tree().change_scene_to_file("res://Scenes/tablesSelectScreen.tscn")
+
+
+func _on_button_change_table_pressed() -> void:
+	Globals.exit_selected_table()
+	get_tree().change_scene_to_file("res://Scenes/tablesSelectScreen.tscn")
+
+
+func _on_button_logout_pressed() -> void:
+	Globals.exit_selected_table()
+	Globals.waiter_logout()
+	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+
+func button_pressed(button:String):
+	Globals.calculator.update(button,%CalculatorLabel)
+
+func _on_button_num_7_pressed() -> void:
+	button_pressed("7")
+
+
+func _on_button_num_8_pressed() -> void:
+	button_pressed("8")
+
+
+func _on_button_num_9_pressed() -> void:
+	button_pressed("9")
+
+
+func _on_button_c_pressed() -> void:
+	button_pressed("C")
+
+
+func _on_button_num_4_pressed() -> void:
+	button_pressed("4")
+
+
+func _on_button_num_5_pressed() -> void:
+	button_pressed("5")
+
+
+func _on_button_num_6_pressed() -> void:
+	button_pressed("6")
+
+
+func _on_button_symbol_plus_pressed() -> void:
+	button_pressed("+")
+
+
+func _on_button_num_1_pressed() -> void:
+	button_pressed("1")
+
+
+func _on_button_num_2_pressed() -> void:
+	button_pressed("2")
+
+
+func _on_button_num_3_pressed() -> void:
+	button_pressed("3")
+
+
+func _on_button_symbol_minus_pressed() -> void:
+	button_pressed("-")
+
+
+func _on_button_symbol_equal_pressed() -> void:
+	button_pressed("=")
+
+
+func _on_button_num_0_pressed() -> void:
+	button_pressed("0")
+
+
+func _on_button_symbol_decimal_pressed() -> void:
+	button_pressed(",")
+
+
+func _on_button_symbol_percent_pressed() -> void:
+	button_pressed("%")

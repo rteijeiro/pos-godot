@@ -87,6 +87,7 @@ func _on_button_open_box_pressed() -> void:
 
 
 func _on_button_change_table_pressed() -> void:
+	Globals.exit_selected_table()
 	get_tree().change_scene_to_file("res://Scenes/tablesSelectScreen.tscn")
 
 
@@ -100,6 +101,8 @@ func _on_button_pays_pressed() -> void:
 
 
 func _on_button_logout_pressed() -> void:
+	Globals.exit_selected_table()
+	Globals.waiter_logout()
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
 
 
