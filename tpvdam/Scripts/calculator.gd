@@ -8,14 +8,26 @@ var writing_secondary_number:=false
 var text:="0"
 
 func initialize(contentLabel:Label):
-	text=str(Globals.get_selected_table_amount())
+	text=_price_to_string(Globals.get_selected_table_amount())
 	contentLabel.text=text
 
 func get_current_value()->float:
+	var value:=0.0
 	if writing_secondary_number:
-		return base_number
+		value=base_number
 	else:
-		return float(text)
+		value=float(text)
+	return _trunc_price(value)
+
+func _trunc_price(price:float)->float:
+	return floor(price*100+0.001)/100
+
+func _price_to_string(price:float)->String:
+	var value:float=_trunc_price(price)
+	if floor(value)==value:
+		return str(int(value))
+	else:
+		return "%0.2f"%value
 
 func _compute_result():
 	if writing_secondary_number:
@@ -26,8 +38,11 @@ func _compute_result():
 			result-=float(text.substr(1))
 		elif text[0]=="%":
 			result+=result*(float(text.substr(1))/100)
-		text=str(result)
+		text=_price_to_string(result)
 		writing_secondary_number=false
+	else:
+		var result:float=float(text)
+		text=_price_to_string(result)
 
 func _start_operation(op:String):
 	if not writing_secondary_number:
@@ -48,7 +63,7 @@ func _erase_last():
 			text=text.erase(text.length()-1)
 		else:
 			if writing_secondary_number:
-				text=str(base_number)
+				text=_price_to_string(base_number)
 				writing_secondary_number=false
 			else:
 				text="0"
