@@ -169,28 +169,28 @@
 		{
 			"id": 1,
 			"name": "Tortilla Española",
-			"image": "starter_1.png",
+			"image": "res://Assets/Products/tortilla-espanola.png",
 			"price": 6.5,
 			"category": "STARTERS"
 		},
 		{
 			"id": 2,
 			"name": "Patatas Bravas",
-			"image": "starter_2.png",
+			"image": "res://Assets/Products/patatas-bravas.png",
 			"price": 5.5,
 			"category": "STARTERS"
 		},
 		{
 			"id": 3,
 			"name": "Croquetas de Jamón",
-			"image": "starter_3.png",
+			"image": "res://Assets/Products/croquetas.png",
 			"price": 4.75,
 			"category": "STARTERS"
 		},
 		{
 			"id": 4,
 			"name": "Gambas al Ajillo",
-			"image": "starter_4.png",
+			"image": "res://Assets/Products/gamba.png",
 			"price": 8.0,
 			"category": "STARTERS"
 		},

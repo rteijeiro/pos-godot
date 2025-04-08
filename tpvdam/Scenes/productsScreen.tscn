@@ -1,8 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://pkq8txdfdkee"]
+[gd_scene load_steps=20 format=3 uid="uid://pkq8txdfdkee"]
 
 [ext_resource type="Texture2D" uid="uid://bcg0463xcvfd0" path="res://Assets/UI/ButtonDefaultRounded.png" id="1_flv86"]
 [ext_resource type="Script" uid="uid://cgqmeiplb4iey" path="res://Scripts/products_screen.gd" id="1_r7ot5"]
 [ext_resource type="FontFile" uid="uid://cklnct7lhakjq" path="res://Assets/Fonts/SometypeMono-VariableFont_wght.ttf" id="1_sagky"]
+[ext_resource type="Texture2D" uid="uid://bub1s4kygtrl3" path="res://Assets/Icons/dieta.png" id="4_fd3tu"]
+[ext_resource type="Texture2D" uid="uid://dfwfivdy2oyq0" path="res://Assets/Icons/carne.png" id="5_r7g1l"]
+[ext_resource type="Texture2D" uid="uid://rv5wywsvrotn" path="res://Assets/Icons/pescado.png" id="6_om6i3"]
+[ext_resource type="Texture2D" uid="uid://dsvpii5gdn4lr" path="res://Assets/Icons/spaguetti.png" id="7_4soyh"]
+[ext_resource type="Texture2D" uid="uid://bu71utbd8ey3h" path="res://Assets/Icons/postre.png" id="8_47dt5"]
+[ext_resource type="Texture2D" uid="uid://bhqdnklll1qfi" path="res://Assets/Icons/vino.png" id="9_paufn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sagky"]
 bg_color = Color(0.101961, 0.0941176, 0.211765, 1)
@@ -102,10 +108,16 @@ theme_override_fonts/font = ExtResource("1_sagky")
 text = "Lista de productos:"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Control/PanelContainerCalculator/Panel/PanelProductos"]
-layout_mode = 0
-offset_top = 39.0
-offset_right = 405.0
-offset_bottom = 469.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.081
+anchor_right = 0.968
+anchor_bottom = 0.977
+offset_left = -0.160001
+offset_top = 0.119999
+offset_right = 0.0559692
+offset_bottom = 0.039978
 
 [node name="GridContainer" type="GridContainer" parent="Control/PanelContainerCalculator/Panel/PanelProductos/ScrollContainer"]
 layout_mode = 2
@@ -314,6 +326,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Entrantes"
+icon = ExtResource("4_fd3tu")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="ButtonMeat" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
@@ -322,6 +338,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Carnes"
+icon = ExtResource("5_r7g1l")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="ButtonFish" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
@@ -330,6 +350,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Pescados"
+icon = ExtResource("6_om6i3")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="ButtonPasta" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
@@ -338,6 +362,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Pasta"
+icon = ExtResource("7_4soyh")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="ButtonDessert" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
@@ -346,6 +374,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Postres"
+icon = ExtResource("8_47dt5")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="ButtonDrinks" type="Button" parent="Control/PanelContainerProducts/Panel/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
@@ -354,6 +386,10 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_r7ot5")
 text = "Bebidas	"
+icon = ExtResource("9_paufn")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="PanelContainerProductsList" type="PanelContainer" parent="Control"]
 layout_mode = 0
