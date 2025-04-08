@@ -70,11 +70,6 @@ func _on_button_drinks_pressed() -> void:
 func _on_button_print_pressed() -> void:
 	pass # Replace with function body.
 
-
-func _on_button_pay_pressed() -> void:
-	pass # Replace with function body.
-
-
 func _on_button_delete_pressed() -> void:
 	pass # Replace with function body.
 
@@ -100,7 +95,8 @@ func _on_button_split_ticket_pressed() -> void:
 
 
 func _on_button_pays_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/pay_view.tscn")
+
 
 
 func _on_button_logout_pressed() -> void:

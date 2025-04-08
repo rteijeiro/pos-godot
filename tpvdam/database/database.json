@@ -412,6 +412,286 @@
 			"amount": 49.0,
 			"paymentMethod": "CARD",
 			"status": "COMPLETED"
+		},
+		{
+			"id": 6,
+			"timestamp": 1744103457,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 7,
+			"timestamp": 1744103459,
+			"amount": 36.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 8,
+			"timestamp": 1744103463,
+			"amount": 36.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 9,
+			"timestamp": 1744103464,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 10,
+			"timestamp": 1744103478,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 11,
+			"timestamp": 1744103481,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 12,
+			"timestamp": 1744103494,
+			"amount": 36.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 13,
+			"timestamp": 1744103498,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 14,
+			"timestamp": 1744104068,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 15,
+			"timestamp": 1744104069,
+			"amount": 36.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 16,
+			"timestamp": 1744104077,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 17,
+			"timestamp": 1744104518,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 18,
+			"timestamp": 1744104520,
+			"amount": 12.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 19,
+			"timestamp": 1744104521,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 20,
+			"timestamp": 1744104521,
+			"amount": 12.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 21,
+			"timestamp": 1744104565,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 22,
+			"timestamp": 1744104567,
+			"amount": 36.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 23,
+			"timestamp": 1744104568,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 24,
+			"timestamp": 1744104569,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 25,
+			"timestamp": 1744104628,
+			"amount": 25.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 26,
+			"timestamp": 1744104746,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 27,
+			"timestamp": 1744104879,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 28,
+			"timestamp": 1744104882,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 29,
+			"timestamp": 1744104884,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 30,
+			"timestamp": 1744104884,
+			"amount": 12.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 31,
+			"timestamp": 1744104885,
+			"amount": 12.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 32,
+			"timestamp": 1744104888,
+			"amount": 12.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 33,
+			"timestamp": 1744105203,
+			"amount": 11.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 34,
+			"timestamp": 1744105388,
+			"amount": 13.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 35,
+			"timestamp": 1744105697,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 36,
+			"timestamp": 1744105825,
+			"amount": 52.0,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 37,
+			"timestamp": 1744105827,
+			"amount": 52.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 38,
+			"timestamp": 1744106108,
+			"amount": 47.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 39,
+			"timestamp": 1744106110,
+			"amount": 36.0,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 40,
+			"timestamp": 1744106170.417,
+			"amount": 33.98,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 41,
+			"timestamp": 1744106173.767,
+			"amount": 15.99,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 42,
+			"timestamp": 1744106176.217,
+			"amount": 15.99,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 43,
+			"timestamp": 1744106377.541,
+			"amount": 15.99,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 44,
+			"timestamp": 1744106378.176,
+			"amount": 15.99,
+			"paymentMethod": "CARD",
+			"status": "COMPLETED"
+		},
+		{
+			"id": 45,
+			"timestamp": 1744106387.726,
+			"amount": 15.99,
+			"paymentMethod": "CASH",
+			"status": "COMPLETED"
 		}
 	]
 }

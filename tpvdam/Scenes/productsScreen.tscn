@@ -432,7 +432,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_w2aud")
 
 [node name="GridContainer" type="GridContainer" parent="Control/PanelContainerOthersButtons/Panel"]
 layout_mode = 0
-offset_right = 1570.0
+offset_right = 1739.0
 offset_bottom = 81.0
 columns = 10
 
@@ -443,14 +443,6 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
 text = "Imprimir"
-
-[node name="ButtonPay" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
-custom_minimum_size = Vector2(140, 60)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-theme_override_styles/normal = SubResource("StyleBoxTexture_w2aud")
-text = "Cobrar en efectivo"
 
 [node name="ButtonDelete" type="Button" parent="Control/PanelContainerOthersButtons/Panel/GridContainer"]
 custom_minimum_size = Vector2(140, 60)
@@ -540,7 +532,6 @@ text = "Cerrar sesión"
 [connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonDessert" to="." method="_on_button_dessert_pressed"]
 [connection signal="pressed" from="Control/PanelContainerProducts/Panel/GridContainer/ButtonDrinks" to="." method="_on_button_drinks_pressed"]
 [connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonPrint" to="." method="_on_button_print_pressed"]
-[connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonPay" to="." method="_on_button_pay_pressed"]
 [connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonDelete" to="." method="_on_button_delete_pressed"]
 [connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonAddNotes" to="." method="_on_button_add_notes_pressed"]
 [connection signal="pressed" from="Control/PanelContainerOthersButtons/Panel/GridContainer/ButtonTickets" to="." method="_on_button_tickets_pressed"]
