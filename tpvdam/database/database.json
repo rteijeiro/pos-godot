@@ -4,67 +4,67 @@
 			"id": 1,
 			"name": "Antonio",
 			"surname": "Sánchez",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_1.png"
 		},
 		{
 			"id": 2,
 			"name": "María",
 			"surname": "García",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_2.png"
 		},
 		{
 			"id": 3,
 			"name": "José",
 			"surname": "Ruiz",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_5.png"
 		},
 		{
 			"id": 4,
 			"name": "Carmen",
 			"surname": "López",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_4.png"
 		},
 		{
 			"id": 5,
 			"name": "Luis",
 			"surname": "Martínez",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_8.png"
 		},
 		{
 			"id": 6,
 			"name": "Paco",
 			"surname": "García",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_15.png"
 		},
 		{
 			"id": 7,
 			"name": "Álvaro",
 			"surname": "Pérez",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_18.png"
 		},
 		{
 			"id": 8,
 			"name": "Alberto",
 			"surname": "Moreno",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_23.png"
 		},
 		{
 			"id": 9,
 			"name": "Jose",
 			"surname": "Fuentes",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_27.png"
 		},
 		{
 			"id": 10,
 			"name": "Pepe",
 			"surname": "Montero",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_30.png"
 		},
 		{
 			"id": 11,
 			"name": "Marta",
 			"surname": "Palacios",
-			"image": "res://icon.svg"
+			"image": "res://Assets/waiter/adult_32.png"
 		}
 	],
 	"tables": [
@@ -381,35 +381,35 @@
 		{
 			"id": 1,
 			"timestamp": 1743430980,
-			"amount": 45.5,
+			"amount": 45.0,
 			"paymentMethod": "CARD",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 2,
 			"timestamp": 1743511500,
-			"amount": 32.99,
+			"amount": 32.0,
 			"paymentMethod": "CASH",
 			"status": "COMPLETED"
 		},
 		{
 			"id": 3,
 			"timestamp": 1743535800,
-			"amount": 58.75,
+			"amount": 58.0,
 			"paymentMethod": "CARD",
 			"status": "PENDING"
 		},
 		{
 			"id": 4,
 			"timestamp": 1743369000,
-			"amount": 27.5,
+			"amount": 27.0,
 			"paymentMethod": "CASH",
 			"status": "CANCELLED"
 		},
 		{
 			"id": 5,
 			"timestamp": 1743531300,
-			"amount": 49.99,
+			"amount": 49.0,
 			"paymentMethod": "CARD",
 			"status": "COMPLETED"
 		}
