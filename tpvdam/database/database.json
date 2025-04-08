@@ -267,63 +267,63 @@
 		{
 			"id": 15,
 			"name": "Bacalao al Pil Pil",
-			"image": "fish_5.png",
+			"image": "res://Assets/Products/bacalao-del-atlantico.png",
 			"price": 15.0,
 			"category": "FISH"
 		},
 		{
 			"id": 16,
 			"name": "Espaguetis con Albóndigas",
-			"image": "pasta_1.png",
+			"image": "res://Assets/Products/espaguetis.png",
 			"price": 11.5,
 			"category": "PASTA"
 		},
 		{
 			"id": 17,
 			"name": "Macarrones con Chorizo",
-			"image": "pasta_2.png",
+			"image": "res://Assets/Products/macarrones.png",
 			"price": 10.99,
 			"category": "PASTA"
 		},
 		{
 			"id": 18,
 			"name": "Fideuà",
-			"image": "pasta_3.png",
+			"image": "res://Assets/Products/fideua.png",
 			"price": 12.75,
 			"category": "PASTA"
 		},
 		{
 			"id": 19,
 			"name": "Fideos a la Marinera",
-			"image": "pasta_4.png",
+			"image": "res://Assets/Products/espaguetis-a-la-marinera.png",
 			"price": 13.99,
 			"category": "PASTA"
 		},
 		{
 			"id": 20,
 			"name": "Pasta con Pisto",
-			"image": "pasta_5.png",
+			"image": "res://Assets/Products/pasta-con-pisto.png",
 			"price": 11.25,
 			"category": "PASTA"
 		},
 		{
 			"id": 21,
 			"name": "Churros con Chocolate",
-			"image": "dessert_1.png",
+			"image": "res://Assets/Products/churros-con-chocolate.png",
 			"price": 4.5,
 			"category": "DESSERTS"
 		},
 		{
 			"id": 22,
 			"name": "Crema Catalana",
-			"image": "dessert_2.png",
+			"image": "res://Assets/Products/crema-catalana.png",
 			"price": 5.5,
 			"category": "DESSERTS"
 		},
 		{
 			"id": 23,
 			"name": "Tarta de Santiago",
-			"image": "dessert_3.png",
+			"image": "res://Assets/Products/tarta-de-santiago.png",
 			"price": 6.0,
 			"category": "DESSERTS"
 		},
